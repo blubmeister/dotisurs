@@ -16,7 +16,8 @@ public class Test {
 		while ((line = br.readLine()) != null) {
 			input += line + "\n";
 		}
-		LikeTable likeTable = LikeTable.parse(input);
+		br.close();
+		LikeTable likeTable = LikeTable.parse(input, "123");
 		System.out.println(likeTable.toBBCode());
 	}
 }

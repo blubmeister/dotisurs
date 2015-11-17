@@ -7,5 +7,5 @@ public class DotasourceManager {
 	public void setSessionId(String sessionId) {
 		this.sessionId = sessionId;
 	}
-	
+
 }

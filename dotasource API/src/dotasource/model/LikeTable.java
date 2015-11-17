@@ -4,8 +4,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
@@ -22,7 +20,7 @@ public class LikeTable {
 
 	private HashSet<Like> likes = new HashSet<>();
 
-	public static LikeTable parse(String input) throws ParseException {
+	public static LikeTable parse(String input, String postId) throws ParseException {
 		input = input.replace("\r", "");
 		input = input.replace("\n", "");
 
@@ -53,7 +51,7 @@ public class LikeTable {
 			String name = matcherUser.group("name");
 			User user = new User(id, name);
 
-			likeTable.likes.add(new Like(user, date));
+			likeTable.likes.add(new Like(user, date, postId));
 		}
 		return likeTable;
 	}

@@ -1,6 +1,6 @@
 package dotasource.model;
 
-public class User implements Comparable<User> {
+public class User{
 	private final String id;
 	private String name;
 
@@ -32,9 +32,5 @@ public class User implements Comparable<User> {
 	@Override
 	public String toString() {
 		return name + " (" + id + ")";
-	}
-
-	public int compareTo(User user) {
-		return id.compareTo(user.id);
 	}
 }
