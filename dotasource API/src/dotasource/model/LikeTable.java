@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
@@ -17,43 +18,65 @@ public class LikeTable {
 	private static final Pattern PATTERN_TR = Pattern.compile(Pattern.quote("[tr]") + "(.*?)" + Pattern.quote("[/tr]"));
 	private static final Pattern PATTERN_TD = Pattern.compile(Pattern.quote("[td]") + "(.*?)" + Pattern.quote("[/td]"));
 	private static final Pattern PATTERN_USER = Pattern.compile(Pattern.quote("[url='http://dotasource.de/user/") + "(?<id>[0-9]+)-.+'\\](?<name>.+)" + Pattern.quote("[/url]"));
+	public static final Pattern PATTERN_LIKE_TABLE = Pattern
+			.compile("(?<content>.*)(?<liketable>\\[table\\].*" + Pattern.quote(Like.LIKE_ICON_URL) + ".*" + PATTERN_USER.pattern() + ".*" + "\\[/table\\])", Pattern.DOTALL);
 
 	private HashSet<Like> likes = new HashSet<>();
 
-	public static LikeTable parse(String input, String postId) throws ParseException {
+	public LikeTable(Collection<Like> likes) {
+		this.likes.addAll(likes);
+	}
+
+	public LikeTable() {
+	}
+
+	public static LikeTable parse(String input, String postId) {
 		input = input.replace("\r", "");
 		input = input.replace("\n", "");
 
 		Matcher matcherTr = PATTERN_TR.matcher(input);
 		LikeTable likeTable = new LikeTable();
 		while (matcherTr.find()) {
-			String likeinput = matcherTr.group(1);
-			Matcher matcherTd = PATTERN_TD.matcher(likeinput);
+			String likeInput = matcherTr.group(1);
+			Matcher matcherTd = PATTERN_TD.matcher(likeInput);
 
 			// Icon
 			matcherTd.find();
 
 			// Date
 			matcherTd.find();
-			String dateinput = matcherTd.group(1);
-			dateinput = dateinput.replace("[td]", "");
-			dateinput = dateinput.replace("[/td]", "");
-			dateinput = dateinput.replace("[i]", "");
-			dateinput = dateinput.replace("[/i]", "");
-			Date date = DATE_FORMAT.parse(dateinput);
+			String dateInput = matcherTd.group(1);
+			dateInput = dateInput.replace("[td]", "");
+			dateInput = dateInput.replace("[/td]", "");
+			dateInput = dateInput.replace("[i]", "");
+			dateInput = dateInput.replace("[/i]", "");
+			Date date;
+			try {
+				date = DATE_FORMAT.parse(dateInput);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				continue;
+			}
 
 			// User
 			matcherTd.find();
-			String userinput = matcherTd.group(1);
-			Matcher matcherUser = PATTERN_USER.matcher(userinput);
+			String userInput = matcherTd.group(1);
+			Matcher matcherUser = PATTERN_USER.matcher(userInput);
 			matcherUser.find();
 			String id = matcherUser.group("id");
 			String name = matcherUser.group("name");
 			User user = new User(id, name);
 
-			likeTable.likes.add(new Like(user, date, postId));
+			Like like = new Like(user, date, postId);
+			likeTable.likes.add(like);
 		}
 		return likeTable;
+	}
+
+	public void addLikes(Collection<Like> newlikes) {
+		likes.removeAll(newlikes); // falls like entfernt und später wieder hinzugefügt, zeitpunkt updaten
+		likes.addAll(newlikes);
 	}
 
 	public String toBBCode() {

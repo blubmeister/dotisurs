@@ -5,7 +5,7 @@ import java.util.Date;
 public class Like implements Comparable<Like> {
 
 	public static final String LIKE_ICON_URL = "http://abload.de/img/likexjp8k.png";
-	
+
 	private User user;
 	private Date date;
 	private String postId;
@@ -27,7 +27,7 @@ public class Like implements Comparable<Like> {
 
 	public String toBBCode() {
 		String string = "[tr]";
-		string += "[td][img]"+LIKE_ICON_URL+"[/img][/td]";
+		string += "[td][img]" + LIKE_ICON_URL + "[/img][/td]";
 		string += "[td]" + LikeTable.DATE_FORMAT_BB.format(date) + "[/td]";
 		string += "[td][url='" + user.getUrl() + "']" + user.getName() + "[/url][/td]";
 		string += "[/tr]";
@@ -42,5 +42,10 @@ public class Like implements Comparable<Like> {
 	@Override
 	public int compareTo(Like like) {
 		return date.compareTo(like.date);
+	}
+
+	@Override
+	public int hashCode() {
+		return (postId + "#" + user.getName()).hashCode();
 	}
 }
