@@ -17,9 +17,9 @@ public class LikeTable {
 	public static final DateFormat DATE_FORMAT_BB = new SimpleDateFormat("'[i]'dd.MM.yyyy'[/i], 'HH:mm");
 	private static final Pattern PATTERN_TR = Pattern.compile(Pattern.quote("[tr]") + "(.*?)" + Pattern.quote("[/tr]"));
 	private static final Pattern PATTERN_TD = Pattern.compile(Pattern.quote("[td]") + "(.*?)" + Pattern.quote("[/td]"));
-	private static final Pattern PATTERN_USER = Pattern.compile(Pattern.quote("[url='http://dotasource.de/user/") + "(?<id>[0-9]+)-.+'\\](?<name>.+)" + Pattern.quote("[/url]"));
+	private static final Pattern PATTERN_USER = Pattern.compile(Pattern.quote("[url='http://dotasource.de/user/") + "(?<id>[0-9]+).*?'\\](?<name>.+)" + Pattern.quote("[/url]"));
 	public static final Pattern PATTERN_LIKE_TABLE = Pattern
-			.compile("(?<content>.*)(?<liketable>\\[table\\].*" + Pattern.quote(Like.LIKE_ICON_URL) + ".*" + PATTERN_USER.pattern() + ".*" + "\\[/table\\])", Pattern.DOTALL);
+			.compile("(?<content>.*?)(?<liketable>\\[align=right\\]\\[spoiler=.*\\[table\\].*?" + Pattern.quote(Like.LIKE_ICON_URL) + ".*?" +  "\\[/table\\])", Pattern.DOTALL);
 
 	private HashSet<Like> likes = new HashSet<>();
 
@@ -62,6 +62,7 @@ public class LikeTable {
 			// User
 			matcherTd.find();
 			String userInput = matcherTd.group(1);
+			System.out.println(userInput);
 			Matcher matcherUser = PATTERN_USER.matcher(userInput);
 			matcherUser.find();
 			String id = matcherUser.group("id");

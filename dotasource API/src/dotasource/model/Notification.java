@@ -137,4 +137,12 @@ public class Notification {
 		}
 		return string;
 	}
+
+	@Override
+	public boolean equals(Object other) {
+		if (other instanceof Notification) {
+			return date.equals(((Notification) other).date) && users.containsAll(((Notification) other).getUsers()) && ((Notification) other).getUsers().containsAll(users);
+		}
+		return false;
+	}
 }
