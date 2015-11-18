@@ -3,18 +3,17 @@
 <html dir="ltr" lang="de">
 
 <head>
-	<title>Beitrag bearbeiten - DotaSource Reborn - Update - DotaSource</title>
-	
+	<title>Benachrichtigungen - Benutzerkonto - DotaSource</title>
 	<base href="http://dotasource.de/" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
-<meta name="robots" content="noindex,nofollow" /><meta name="description" content="Erfahre alles ¸ber Dota auf DotaSource.de! Community, Guides, TeamSpeak und vieles mehr!" />
+<meta name="robots" content="noindex,nofollow" /><meta name="description" content="Erfahre alles √ºber Dota auf DotaSource.de! Community, Guides, TeamSpeak und vieles mehr!" />
 <meta name="keywords" content="dota2, valve, steam, dota, warcraft" />
 <meta property="og:site_name" content="DotaSource" />
 
 <!-- Stylesheets -->
-<link rel="stylesheet" type="text/css" href="http://dotasource.de/wcf/style/style-3.css?m=1447791075" /><link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://dotasource.de/wcf/style/style-3.css?m=1447847979" /><link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 
 
@@ -22,9 +21,9 @@
 	//<![CDATA[
 	var SID_ARG_2ND	= '';
 	var WCF_PATH = 'http://dotasource.de/wcf/';
-	var SECURITY_TOKEN = 'dbebfef3bdb14c3956f5628a1f78b8f29d2949cd';
+	var SECURITY_TOKEN = '613dda245d4a38a76fc139ce593d84b779fff609';
 	var LANGUAGE_ID = 1;
-	var TIME_NOW = 1447840154;
+	var TIME_NOW = 1447858042;
 	var URL_LEGACY_MODE = false;
 	//]]>
 </script>
@@ -100,7 +99,9 @@
 	
 </head>
 
-<body id="tplPostEdit" data-template="postEdit" data-application="wbb">
+<body id="tplNotificationList" data-template="notificationList" data-application="wcf">
+
+
 <div class="body-bg"></div>
 
 <a id="top"></a>
@@ -170,8 +171,8 @@
 									
 									<ul class="interactiveDropdownUserMenuLinkList">
 																					<li><a href="http://dotasource.de/settings/">Allgemein</a></li>
-																					<li><a href="http://dotasource.de/settings/?category=privacy">Privatsph‰re</a></li>
-																					<li><a href="http://dotasource.de/settings/?category=latestPostsAndThreads">Neueste Beitr‰ge und Themen</a></li>
+																					<li><a href="http://dotasource.de/settings/?category=privacy">Privatsph√§re</a></li>
+																					<li><a href="http://dotasource.de/settings/?category=latestPostsAndThreads">Neueste Beitr√§ge und Themen</a></li>
 																					<li><a href="http://dotasource.de/notification-settings/">Benachrichtigungen</a></li>
 																			</ul>
 								</div>
@@ -199,7 +200,7 @@
 								<div><span class="icon icon32 fa-bars"></span></div>
 								
 								<div class="containerHeadline">
-									<h3>Neueste Beitr‰ge und Themen</h3>
+									<h3>Neueste Beitr√§ge und Themen</h3>
 									
 									<ul class="interactiveDropdownUserMenuLinkList">
 																					<li><a href="http://dotasource.de/latest-posts-and-threads-user-box-list/">Auswahl</a></li>
@@ -214,7 +215,7 @@
 					
 				</ul>
 			</div>
-			<a class="interactiveDropdownShowAll" href="http://dotasource.de/logout/?t=dbebfef3bdb14c3956f5628a1f78b8f29d2949cd" onclick="WCF.Dropdown.Interactive.Handler.close('userMenu'); WCF.System.Confirmation.show('Wollen Sie sich wirklich abmelden?', $.proxy(function (action) { if (action == 'confirm') window.location.href = $(this).attr('href'); }, this)); return false;">Abmelden</a>
+			<a class="interactiveDropdownShowAll" href="http://dotasource.de/logout/?t=613dda245d4a38a76fc139ce593d84b779fff609" onclick="WCF.Dropdown.Interactive.Handler.close('userMenu'); WCF.System.Confirmation.show('Wollen Sie sich wirklich abmelden?', $.proxy(function (action) { if (action == 'confirm') window.location.href = $(this).attr('href'); }, this)); return false;">Abmelden</a>
 		</div>
 		
 	</li>
@@ -234,15 +235,15 @@
 			
 			</li>
 
-	<li><a href="http://dotasource.de/logout/?t=dbebfef3bdb14c3956f5628a1f78b8f29d2949cd" class="noJsOnly" style="display: none"><span class="icon icon16 icon-signout"></span> <span>Abmelden</span></a></li>
+	<li><a href="http://dotasource.de/logout/?t=613dda245d4a38a76fc139ce593d84b779fff609" class="noJsOnly" style="display: none"><span class="icon icon16 icon-signout"></span> <span>Abmelden</span></a></li>
 					</ul>
 				
 				
 				
 				
 <aside id="search" class="searchBar dropdown" data-disable-auto-focus="true">
-	<form method="post" action="http://dotasource.de/search/?types%5B%5D=com.woltlab.wbb.post&amp;boardIDs%5B%5D=286">
-		<input type="search" name="q" placeholder="Aktuelles Forum durchsuchen" autocomplete="off" required="required" value="" class="dropdownToggle" data-toggle="search" />
+	<form method="post" action="http://dotasource.de/search/?types%5B%5D=com.woltlab.wbb.post">
+		<input type="search" name="q" placeholder="Alle Foren durchsuchen" autocomplete="off" required="required" value="" class="dropdownToggle" data-toggle="search" />
 		
 		<ul class="dropdownMenu">
 							<li class="dropdownText">
@@ -250,10 +251,10 @@
 				</li>
 				<li class="dropdownDivider"></li>
 			
-			<li><a href="http://dotasource.de/search/?types%5B%5D=com.woltlab.wbb.post&amp;boardIDs%5B%5D=286">Erweiterte Suche</a></li>
+			<li><a href="http://dotasource.de/search/?types%5B%5D=com.woltlab.wbb.post">Erweiterte Suche</a></li>
 		</ul>
 		
-		<input type="hidden" name="types[]" value="com.woltlab.wbb.post" /><input type="hidden" name="boardIDs[]" value="286" />		<input type="hidden" name="t" value="dbebfef3bdb14c3956f5628a1f78b8f29d2949cd" />	</form>
+		<input type="hidden" name="types[]" value="com.woltlab.wbb.post" />		<input type="hidden" name="t" value="613dda245d4a38a76fc139ce593d84b779fff609" />	</form>
 </aside>
 
 	
@@ -280,7 +281,7 @@
 
 		
 		
-<header id="pageHeader" class="layoutFluid">
+<header id="pageHeader" class="layoutFluid sidebarOrientationLeft">
 
 		
 		
@@ -291,13 +292,8 @@
 		
 			<nav id="mainMenu" class="mainMenu jsMobileNavigation" data-button-label="Navigation">
 		<ul>
-																			<li class="active" data-menu-item="wbb.header.menu.board">
+																			<li data-menu-item="wbb.header.menu.board">
 						<a href="http://dotasource.de/board-list/">Forum</a>
-													<ul class="invisible">
-																	<li><a href="http://dotasource.de/board-quick-search/?mode=unreadPosts"><span>Ungelesene Beitr‰ge</span></a></li>
-																	<li><a href="http://dotasource.de/watched-thread-list/"><span>Abonnierte Themen</span></a></li>
-																
-							</ul>
 											</li>
 																<li data-menu-item="wcf.user.members">
 						<a href="http://dotasource.de/members-list/">Mitglieder</a>
@@ -311,25 +307,78 @@
 		
 		
 					<nav class="navigation navigationHeader">
-								<ul class="navigationMenuItems">
-							<li data-menu-item="wbb.header.menu.board.unreadPosts"><a href="http://dotasource.de/board-quick-search/?mode=unreadPosts"><span>Ungelesene Beitr‰ge</span></a></li>
-							<li data-menu-item="wbb.header.menu.board.watchedThreads"><a href="http://dotasource.de/watched-thread-list/"><span>Abonnierte Themen</span></a></li>
-						
-		</ul>
-			
+								
 				<ul class="navigationIcons">
-					<li id="toBottomLink"><a href="http://dotasource.de/post-edit/1254968/#bottom" title="Zum Seitenende" class="jsTooltip"><span class="icon icon16 icon-arrow-down"></span> <span class="invisible">Zum Seitenende</span></a></li>
+					<li id="toBottomLink"><a href="http://dotasource.de/notification-list/#bottom" title="Zum Seitenende" class="jsTooltip"><span class="icon icon16 icon-arrow-down"></span> <span class="invisible">Zum Seitenende</span></a></li>
 					<li id="sitemap" class="jsOnly"><a title="Schnellnavigation" class="jsTooltip"><span class="icon icon16 icon-sitemap"></span> <span class="invisible">Schnellnavigation</span></a></li>
 														</ul>
 			</nav>
 			</div>
 </header>
 
-<div id="main" class="layoutFluid">
+<div id="main" class="layoutFluid sidebarOrientationLeft">
 	<div>
 		<div>
 						
-																	 
+																<aside class="sidebar">
+						<div>
+							
+							
+									
+	 
+	
+			<fieldset>
+			<legend>Benutzerkonto</legend>
+			
+			<nav>
+				<ul>
+											<li><a href="http://dotasource.de/account-management/">Verwaltung</a></li>
+											<li><a href="http://dotasource.de/avatar-edit/">Avatar</a></li>
+											<li><a href="http://dotasource.de/signature-edit/">Signatur</a></li>
+									</ul>
+			</nav>
+		</fieldset>
+			<fieldset>
+			<legend>Einstellungen</legend>
+			
+			<nav>
+				<ul>
+											<li><a href="http://dotasource.de/settings/">Allgemein</a></li>
+											<li><a href="http://dotasource.de/settings/?category=privacy">Privatsph√§re</a></li>
+											<li><a href="http://dotasource.de/settings/?category=latestPostsAndThreads">Neueste Beitr√§ge und Themen</a></li>
+											<li><a href="http://dotasource.de/notification-settings/">Benachrichtigungen</a></li>
+									</ul>
+			</nav>
+		</fieldset>
+			<fieldset>
+			<legend>Community</legend>
+			
+			<nav>
+				<ul>
+											<li class="active"><a href="http://dotasource.de/notification-list/">Benachrichtigungen</a></li>
+											<li><a href="http://dotasource.de/following/">Nutzer, denen Sie folgen</a></li>
+											<li><a href="http://dotasource.de/ignored-users/">Blockierte Nutzer</a></li>
+									</ul>
+			</nav>
+		</fieldset>
+			<fieldset>
+			<legend>Neueste Beitr√§ge und Themen</legend>
+			
+			<nav>
+				<ul>
+											<li><a href="http://dotasource.de/latest-posts-and-threads-user-box-list/">Auswahl</a></li>
+											<li><a href="http://dotasource.de/latest-posts-and-threads-ignored-boards/">Ignorierte Foren</a></li>
+											<li><a href="http://dotasource.de/latest-posts-and-threads-ignored-threads/">Ignorierte Themen</a></li>
+											<li><a href="http://dotasource.de/latest-posts-and-threads-user-box-add/">Boxen anlegen</a></li>
+									</ul>
+			</nav>
+		</fieldset>
+								
+							
+						</div>
+					</aside>
+					
+															 
 			
 			<section id="content" class="content">
 				
@@ -339,23 +388,11 @@
 			<li title="DotaSource" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
 						<a href="http://dotasource.de/" itemprop="url"><span itemprop="title">DotaSource</span></a> <span class="pointer"><span>&raquo;</span></span>
 					</li>
-									<li title="Forum" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-						<a href="http://dotasource.de/board-list/" itemprop="url"><span itemprop="title">Forum</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="DotaSource" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-						<a href="http://dotasource.de/board/20-dotasource/" itemprop="url"><span itemprop="title">DotaSource</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="Update" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-						<a href="http://dotasource.de/board/286-update/" itemprop="url"><span itemprop="title">Update</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="DotaSource Reborn" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-						<a href="http://dotasource.de/thread/36094-dotasource-reborn/" itemprop="url"><span itemprop="title">DotaSource Reborn</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
 		</ul>
 	</nav>
 
 <header class="boxHeadline">
-	<h1>Beitrag bearbeiten</h1>
+	<h1>Benachrichtigungen <span class="badge jsNotificationsBadge">283</span></h1>
 </header>
 
 <div class="userNotice">
@@ -363,676 +400,321 @@
 		
 		
 	<noscript>
-		<p class="warning">In Ihrem Webbrowser ist JavaScript deaktiviert. Um alle Funktionen dieser Website nutzen zu kˆnnen, muss JavaScript aktiviert sein.</p>
+		<p class="warning">In Ihrem Webbrowser ist JavaScript deaktiviert. Um alle Funktionen dieser Website nutzen zu k√∂nnen, muss JavaScript aktiviert sein.</p>
 	</noscript>
 	
 		
 		
 	</div>
 
-
-<form id="messageContainer" class="jsFormGuard" method="post" action="http://dotasource.de/post-edit/1254968/">
-	<div class="container containerPadding marginTop">
-					<fieldset>
-				<legend>Beitrag lˆschen</legend>
-				
-				<dl>
-					<dt></dt>
-					<dd><label><input type="checkbox" id="deletePost" name="deletePost" value="1" /> Diesen Beitrag in den Papierkorb verschieben</label></dd>
-				</dl>
-				
-				<dl id="deleteReasonDL">
-					<dt><label for="deleteReason">Begr¸ndung (optional)</label></dt>
-					<dd>
-						<		 rows="3" cols="40" id="deleteReason" name="deleteReason"></textarea>
-											</dd>
-				</dl>
-			</fieldset>
-			
-			
-				
-				
-		<fieldset>
-			<legend>Informationen</legend>
-			
-						
-			<dl>
-				<dt><label for="subject">Titel</label></dt>
-				<dd>
-					<input type="text" id="subject" name="subject" value="" maxlength="255" class="long" />
-									</dd>
-			</dl>
-			
-						
-						
-			<dl>
-				<dt><label for="editReason">Bearbeitungsgrund (optional)</label></dt>
-				<dd>
-					<textarea rows="3" cols="40" id="editReason" name="editReason">Likes aktualisieren</textarea>
-									</dd>
-			</dl>
-			
-			
-		</fieldset>
-		
-		<fieldset>
-			<legend>Nachricht</legend>
-			
-			<dl class="wide">
-				<dt><label for="text">Nachricht</label></dt>
-				<dd>
-					<textarea rows="20" cols="40" id="text" name="text" data-autosave="com.woltlab.wbb.postEdit-1254968" data-autosave-last-edit-time="1447840150">Das Thread-URL-Format hat sich ge‰ndert, daher geht's nicht mehr. Kannst es dir aber manuell zusammenbasteln:
-Alter Link vom Busfahrer: [tt]http://dotasource.de/community/funstuff/28347-der-lustige-deutsche-bilder-thread/index45.html#post984954[/tt]
-Nimmst ganz am ende die Postnummer und rufst dann folgenden Link auf, die Zahl halt jeweils einsetzen:
-[url]http://dotasource.de/thread?postID=984954#post984954[/url][align=right]
-[spoiler=6 Likes]
-[table]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]17.11.2015[/i], 23:45[/td][td][url='http://dotasource.de/user/47877']DerSaxe[/url][/td][/tr]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]17.11.2015[/i], 23:45[/td][td][url='http://dotasource.de/user/38850']fugo[/url][/td][/tr]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]17.11.2015[/i], 23:46[/td][td][url='http://dotasource.de/user/53481']BRETTDESZORNS[/url][/td][/tr]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]18.11.2015[/i], 08:19[/td][td][url='http://dotasource.de/user/22939']watnuss[/url][/td][/tr]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]18.11.2015[/i], 08:19[/td][td][url='http://dotasource.de/user/56599']Nifunifa[/url][/td][/tr]
-[tr][td][img]http://abload.de/img/likexjp8k.png[/img][/td][td][i]18.11.2015[/i], 10:39[/td][td][url='http://dotasource.de/user/55212']Kyuzo[/url][/td][/tr]
-[/table]
-[/spoiler]
-[/align]</textarea>
-									</dd>
-			</dl>
-			
-			
-		</fieldset>
-		
-		
-		
-		<div class="messageTabMenu" data-preselect="true" data-wysiwyg-container-id="text">
-	<nav class="messageTabMenuNavigation jsOnly">
-		<ul>
-			<li data-name="smilies"><a><span class="icon icon16 fa-smile-o"></span> <span>Smileys</span></a></li>			<li data-name="attachments"><a><span class="icon icon16 fa-paperclip"></span> <span>Dateianh‰nge</span></a></li>			<li data-name="settings"><a><span class="icon icon16 fa-cog"></span> <span>Einstellungen</span></a></li>
-			<li data-name="poll"><a><span class="icon icon16 fa-bar-chart"></span> <span>Umfrage</span></a></li>			
-		</ul>
-	</nav>
-	
-	
-<div class="container containerPadding messageTabMenu" data-preselect="true" data-collapsible="false" id="smilies-text">
-		
-			<nav class="jsOnly">
-			<ul>
-											<li data-name="smilies-0" data-smiley-category-id="0"><a>Standard</a></li>
-							<li data-name="smilies-1" data-smiley-category-id="1"><a>Animiert</a></li>
-							<li data-name="smilies-2" data-smiley-category-id="2"><a>Groﬂ</a></li>
-				</ul>
-		</nav>
-		
-					<div id="smilies-text-0">
-											<ul class="smileyList">
-			<li><a title="L‰cheln" class="jsTooltip jsSmiley" data-smiley-code=":)" data-smiley-path="http://dotasource.de/wcf/images/smilies/smile.png"><img src="http://dotasource.de/wcf/images/smilies/smile.png" alt=":)" /></a></li>
-			<li><a title="Traurig" class="jsTooltip jsSmiley" data-smiley-code=":(" data-smiley-path="http://dotasource.de/wcf/images/smilies/sad.png"><img src="http://dotasource.de/wcf/images/smilies/sad.png" alt=":(" /></a></li>
-			<li><a title="Zwinkern" class="jsTooltip jsSmiley" data-smiley-code=";)" data-smiley-path="http://dotasource.de/wcf/images/smilies/wink.png"><img src="http://dotasource.de/wcf/images/smilies/wink.png" alt=";)" /></a></li>
-			<li><a title="Zunge" class="jsTooltip jsSmiley" data-smiley-code=":P" data-smiley-path="http://dotasource.de/wcf/images/smilies/tongue.png"><img src="http://dotasource.de/wcf/images/smilies/tongue.png" alt=":P" /></a></li>
-			<li><a title="Grinsen" class="jsTooltip jsSmiley" data-smiley-code="^^" data-smiley-path="http://dotasource.de/wcf/images/smilies/grin.png"><img src="http://dotasource.de/wcf/images/smilies/grin.png" alt="^^" /></a></li>
-			<li><a title="Groﬂes Grinsen" class="jsTooltip jsSmiley" data-smiley-code=":D" data-smiley-path="http://dotasource.de/wcf/images/smilies/biggrin.png"><img src="http://dotasource.de/wcf/images/smilies/biggrin.png" alt=":D" /></a></li>
-			<li><a title="Weinen" class="jsTooltip jsSmiley" data-smiley-code=";(" data-smiley-path="http://dotasource.de/wcf/images/smilies/crying.png"><img src="http://dotasource.de/wcf/images/smilies/crying.png" alt=";(" /></a></li>
-			<li><a title="W¸tend" class="jsTooltip jsSmiley" data-smiley-code="X(" data-smiley-path="http://dotasource.de/wcf/images/smilies/angry.png"><img src="http://dotasource.de/wcf/images/smilies/angry.png" alt="X(" /></a></li>
-			<li><a title="Kuss" class="jsTooltip jsSmiley" data-smiley-code=":*" data-smiley-path="http://dotasource.de/wcf/images/smilies/kiss.png"><img src="http://dotasource.de/wcf/images/smilies/kiss.png" alt=":*" /></a></li>
-			<li><a title="Perplex" class="jsTooltip jsSmiley" data-smiley-code=":|" data-smiley-path="http://dotasource.de/wcf/images/smilies/mellow.png"><img src="http://dotasource.de/wcf/images/smilies/mellow.png" alt=":|" /></a></li>
-			<li><a title="Ha!" class="jsTooltip jsSmiley" data-smiley-code="8o" data-smiley-path="http://dotasource.de/wcf/images/smilies/w00t.png"><img src="http://dotasource.de/wcf/images/smilies/w00t.png" alt="8o" /></a></li>
-			<li><a title="Ver‰ngstigt" class="jsTooltip jsSmiley" data-smiley-code="=O" data-smiley-path="http://dotasource.de/wcf/images/smilies/scared.png"><img src="http://dotasource.de/wcf/images/smilies/scared.png" alt="=O" /></a></li>
-			<li><a title="‹bel" class="jsTooltip jsSmiley" data-smiley-code="&lt;X" data-smiley-path="http://dotasource.de/wcf/images/smilies/sick.png"><img src="http://dotasource.de/wcf/images/smilies/sick.png" alt="&lt;X" /></a></li>
-			<li><a title="Unsicher" class="jsTooltip jsSmiley" data-smiley-code=":/" data-smiley-path="http://dotasource.de/wcf/images/smilies/unsure.png"><img src="http://dotasource.de/wcf/images/smilies/unsure.png" alt=":/" /></a></li>
-			<li><a title="Verr¸ckt" class="jsTooltip jsSmiley" data-smiley-code=":S" data-smiley-path="http://dotasource.de/wcf/images/smilies/wacko.png"><img src="http://dotasource.de/wcf/images/smilies/wacko.png" alt=":S" /></a></li>
-			<li><a title="Kneifen" class="jsTooltip jsSmiley" data-smiley-code="X/" data-smiley-path="http://dotasource.de/wcf/images/smilies/pinch.png"><img src="http://dotasource.de/wcf/images/smilies/pinch.png" alt="X/" /></a></li>
-			<li><a title="Cool" class="jsTooltip jsSmiley" data-smiley-code="8)" data-smiley-path="http://dotasource.de/wcf/images/smilies/cool.png"><img src="http://dotasource.de/wcf/images/smilies/cool.png" alt="8)" /></a></li>
-			<li><a title="Verwirrt" class="jsTooltip jsSmiley" data-smiley-code="?(" data-smiley-path="http://dotasource.de/wcf/images/smilies/confused.png"><img src="http://dotasource.de/wcf/images/smilies/confused.png" alt="?(" /></a></li>
-			<li><a title="H‰?" class="jsTooltip jsSmiley" data-smiley-code=":huh:" data-smiley-path="http://dotasource.de/wcf/images/smilies/huh.png"><img src="http://dotasource.de/wcf/images/smilies/huh.png" alt=":huh:" /></a></li>
-			<li><a title="Augen rollen" class="jsTooltip jsSmiley" data-smiley-code=":rolleyes:" data-smiley-path="http://dotasource.de/wcf/images/smilies/rolleyes.png"><img src="http://dotasource.de/wcf/images/smilies/rolleyes.png" alt=":rolleyes:" /></a></li>
-			<li><a title="Liebe" class="jsTooltip jsSmiley" data-smiley-code=":love:" data-smiley-path="http://dotasource.de/wcf/images/smilies/love.png"><img src="http://dotasource.de/wcf/images/smilies/love.png" alt=":love:" /></a></li>
-			<li><a title="‹berrascht" class="jsTooltip jsSmiley" data-smiley-code="8|" data-smiley-path="http://dotasource.de/wcf/images/smilies/blink.png"><img src="http://dotasource.de/wcf/images/smilies/blink.png" alt="8|" /></a></li>
-			<li><a title="W¸tend" class="jsTooltip jsSmiley" data-smiley-code=":cursing:" data-smiley-path="http://dotasource.de/wcf/images/smilies/cursing.png"><img src="http://dotasource.de/wcf/images/smilies/cursing.png" alt=":cursing:" /></a></li>
-			<li><a title="Daumen runter" class="jsTooltip jsSmiley" data-smiley-code=":thumbdown:" data-smiley-path="http://dotasource.de/wcf/images/smilies/thumbdown.png"><img src="http://dotasource.de/wcf/images/smilies/thumbdown.png" alt=":thumbdown:" /></a></li>
-			<li><a title="Daumen hoch" class="jsTooltip jsSmiley" data-smiley-code=":thumbsup:" data-smiley-path="http://dotasource.de/wcf/images/smilies/thumbsup.png"><img src="http://dotasource.de/wcf/images/smilies/thumbsup.png" alt=":thumbsup:" /></a></li>
-			<li><a title="Daumen hoch" class="jsTooltip jsSmiley" data-smiley-code=":thumbup:" data-smiley-path="http://dotasource.de/wcf/images/smilies/thumbup.png"><img src="http://dotasource.de/wcf/images/smilies/thumbup.png" alt=":thumbup:" /></a></li>
-			<li><a title="Schlafen" class="jsTooltip jsSmiley" data-smiley-code=":sleeping:" data-smiley-path="http://dotasource.de/wcf/images/smilies/sleeping.png"><img src="http://dotasource.de/wcf/images/smilies/sleeping.png" alt=":sleeping:" /></a></li>
-			<li><a title="Pfeifen" class="jsTooltip jsSmiley" data-smiley-code=":whistling:" data-smiley-path="http://dotasource.de/wcf/images/smilies/whistling.png"><img src="http://dotasource.de/wcf/images/smilies/whistling.png" alt=":whistling:" /></a></li>
-			<li><a title="Chinese" class="jsTooltip jsSmiley" data-smiley-code=":chinese:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley36.png"><img src="http://dotasource.de/wcf/images/smilies/smiley36.png" alt=":chinese:" /></a></li>
-			<li><a title="In Ordnung" class="jsTooltip jsSmiley" data-smiley-code=":fine:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley38.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley38.gif" alt=":fine:" /></a></li>
-			<li><a title="Teufel" class="jsTooltip jsSmiley" data-smiley-code=":evil:" data-smiley-path="http://dotasource.de/wcf/images/smilies/evil.png"><img src="http://dotasource.de/wcf/images/smilies/evil.png" alt=":evil:" /></a></li>
-			<li><a title="Heiliger" class="jsTooltip jsSmiley" data-smiley-code=":saint:" data-smiley-path="http://dotasource.de/wcf/images/smilies/saint.png"><img src="http://dotasource.de/wcf/images/smilies/saint.png" alt=":saint:" /></a></li>
-			<li><a title="Herz" class="jsTooltip jsSmiley" data-smiley-code="&lt;3" data-smiley-path="http://dotasource.de/wcf/images/smilies/heart.png"><img src="http://dotasource.de/wcf/images/smilies/heart.png" alt="&lt;3" /></a></li>
-			<li><a title="Aufmerksam" class="jsTooltip jsSmiley" data-smiley-code=":!:" data-smiley-path="http://dotasource.de/wcf/images/smilies/attention.png"><img src="http://dotasource.de/wcf/images/smilies/attention.png" alt=":!:" /></a></li>
-			<li><a title="Frage" class="jsTooltip jsSmiley" data-smiley-code=":?:" data-smiley-path="http://dotasource.de/wcf/images/smilies/question.png"><img src="http://dotasource.de/wcf/images/smilies/question.png" alt=":?:" /></a></li>
-			<li><a title="Bluecool" class="jsTooltip jsSmiley" data-smiley-code=":bluecool:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley35.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley35.gif" alt=":bluecool:" /></a></li>
-			<li><a title="Fresse" class="jsTooltip jsSmiley" data-smiley-code=":fresse:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley39.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley39.gif" alt=":fresse:" /></a></li>
-			<li><a title="H‰sslich" class="jsTooltip jsSmiley" data-smiley-code=":ugly:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley44.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley44.gif" alt=":ugly:" /></a></li>
-			<li><a title="Grinsekˆnig" class="jsTooltip jsSmiley" data-smiley-code=":grinking:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley41.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley41.gif" alt=":grinking:" /></a></li>
-			<li><a title="Weihnachten" class="jsTooltip jsSmiley" data-smiley-code=":xmas:" data-smiley-path="http://dotasource.de/wcf/images/smilies/smiley45.gif"><img src="http://dotasource.de/wcf/images/smilies/smiley45.gif" alt=":xmas:" /></a></li>
-	</ul>
-						</div>
-					<div id="smilies-text-1">
-							</div>
-					<div id="smilies-text-2">
-							</div>
-				
-		
-		
-	
-	
-	
-</div>	<div class="jsOnly formAttachmentContent container containerPadding" id="attachments_text">
-	<ul class="formAttachmentList clearfix" style="display: none">
-			</ul>
-	
-	<dl class="wide">
-		<dt></dt>
-		<dd>
-			<div data-max-size="5000000"></div>
-			<small>Maximale Anzahl an Dateianh‰ngen: 10<br />
-Maximale Dateigrˆﬂe: 5 MB<br />
-Erlaubte Dateiendungen: bmp, doc, docx, gif, jpeg, jpg, ods, odt, pdf, png, psd, rar, tar, txt, w3g, w3m, w3x, xls, xlsx, zip</small>
-		</dd>
-	</dl>
+<div class="contentNavigation">
+	<nav class="pageNavigation" data-link="http://dotasource.de/notification-list/?pageNo=%d" data-pages="15">
+<ul>
+<li class="skip disabled"><span class="icon icon16 icon-double-angle-left disabled"></span></li>
+<li class="button active"><span>1</span><span class="invisible">Seite 1 von 15</span></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=2" title="Seite 2">2</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=3" title="Seite 3">3</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=4" title="Seite 4">4</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=5" title="Seite 5">5</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=6" title="Seite 6">6</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=7" title="Seite 7">7</a></li>
+<li class="button jumpTo"><a title="Gehe zu Seite" class="jsTooltip">‚Ä¶</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=15" title="Seite 15">15</a></li>
+<li class="button skip"><a href="http://dotasource.de/notification-list/?pageNo=2" title="N√§chste Seite" class="jsTooltip"><span class="icon icon16 icon-double-angle-right"></span></a></li>
+</ul></nav>
 	
 	
 </div>
 
-
-
-<input type="hidden" name="tmpHash" value="3470dba6a290c45dcc030e11a66054c89a5441de" />	
-	<fieldset id="settings_text" class="settingsContent tabMenuContent container containerPadding">
-	<dl class="wide">
-					<dt></dt>
-			<dd>
-				<label><input id="preParse" name="preParse" type="checkbox" value="1" checked="checked" /> URLs automatisch erkennen</label>
-				<small>Internet-Adressen werden automatisch erkannt und umgewandelt.</small>
-			</dd>
-							<dt></dt>
-			<dd>
-				<label><input id="enableSmilies" name="enableSmilies" type="checkbox" value="1" checked="checked" /> Darstellung von Smileys aktivieren</label>
-				<small>Smiley-Code wird in Ihrer Nachricht automatisch als Smiley-Grafik dargestellt.</small>
-			</dd>
-							<dt></dt>
-			<dd>
-				<label><input id="enableBBCodes" name="enableBBCodes" type="checkbox" value="1" checked="checked" /> Darstellung von BBCodes aktivieren</label>
-				<small>Sie kˆnnen BBCodes zur Formatierung Ihrer Nachricht nutzen.</small>
-			</dd>
-									<dt></dt>
-			<dd>
-				<label><input id="showSignature" name="showSignature" type="checkbox" value="1" checked="checked" /> Signatur anzeigen</label>
-				<small>Die im Profil eingestellte Signatur wird an diese Nachricht angeh‰ngt.</small>
-			</dd>
-				
-					<dt></dt>
-		<dd>
-			<label><input name="subscribeThread" type="checkbox" value="1" /> Thema abonnieren</label>
-			<small>F¸gt dieses Thema der Abonnement-Liste in Ihrem Profil hinzu.</small>
-		</dd>
-					</dl>
-</fieldset>
 		
-	
-	<div id="poll" class="jsOnly tabMenuContent container containerPadding">
-		<fieldset>
-			<dl>
-				<dt>
-					<label for="pollQuestion">Frage</label>
-				</dt>
-				<dd>
-					<input type="text" name="pollQuestion" id="pollQuestion" value="" class="long" maxlength="255" />
-				</dd>
-				<dt>
-					<label>Antworten</label>
-				</dt>
-				<dd id="pollOptionContainer" class="sortableListContainer">
-					<ol class="sortableList"></ol>
-										<small>Sie kˆnnen die Antworten mittels Dr¸cken und Festhalten in ihrer Reihenfolge ‰ndern. Sie kˆnnen 48 Antwortmˆglichkeiten vorgeben.</small>
-				</dd>
-			</dl>
-			<dl>
-				<dt>
-					<label for="pollEndTime">Umfrage endet (optional)</label>
-				</dt>
-				<dd>
-					<input type="datetime" name="pollEndTime" id="pollEndTime" value="" class="medium" data-ignore-timezone="true" />
-									</dd>
-			</dl>
-			<dl>
-				<dt>
-					<label for="pollMaxVotes">Anzahl erlaubter Antworten</label>
-				</dt>
-				<dd>
-					<input type="number" name="pollMaxVotes" id="pollMaxVotes" value="1" min="1" class="tiny" />
-									</dd>
-			</dl>
-			<dl>
-				<dt></dt>
-				<dd>
-					<label><input type="checkbox" name="pollIsChangeable" value="1" /> Abgegebene Stimmen d¸rfen ver‰ndert werden</label>
-				</dd>
-									<dd>
-						<label><input type="checkbox" name="pollIsPublic" value="1" /> Teilnehmer sind sichtbar</label>
-					</dd>
-								<dd>
-					<label><input type="checkbox" name="pollResultsRequireVote" value="1" /> Ergebnis erst nach Abgabe der Stimme sichtbar</label>
-					<small>Das Ergebnis ist erst mit dem Ablauf der Umfrage oder der Abgabe einer Stimme sichtbar.</small>
-				</dd>
-				<dd>
-					<label><input type="checkbox" name="pollSortByVotes" value="1" /> Ergebnis nach Stimmen sortieren</label>
-				</dd>
-			</dl>
-			
-			
-		</fieldset>
-	</div>
-	
-	
-</div>
-
-
-	</div>
-	
-	<div class="formSubmit">
-		<input type="submit" value="Absenden" accesskey="s" />
-		<button id="previewButton" class="jsOnly" accesskey="p">Vorschau</button>
-
-
-		<input type="hidden" name="t" value="dbebfef3bdb14c3956f5628a1f78b8f29d2949cd" />	</div>
-</form>
-
-	<header class="boxHeadline boxSubHeadline">
-		<h2>Vorherige Beitr‰ge <span class="badge">348</span></h2>
-	</header>
-	
-	<div>
-		<ul class="wbbThreadPostList messageList">
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254963">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/47877-dersaxe/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/da/1706-daf72ffa77e7869626df814f0d338e7012dd356a-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/da/1706-daf72ffa77e7869626df814f0d338e7012dd356a-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/47877-dersaxe/">DerSaxe</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254963#post1254963" class="permalink"><time datetime="2015-11-17T23:32:45+01:00" class="datetime" data-timestamp="1447799565" data-date="17. November 2015" data-time="23:32" data-offset="3600">17. November 2015, 23:32</time></a>
-												</p>
-											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												Sorry, falls Rehpost, aber ich kann verlinkte alte Beitr‰ge nicht aufrufen (Fehlermeldung) Konkret: Busfahrer-Posts aus dem Top10-Faden leiten zu Fehlermeldungen weiter, ich weiﬂ deswegen nicht ob es nur pre-Reborn ist. Per Google gesuchte Beitr‰ge landen auch auf Fehlermeldungen. Browser ist Safari auf dem Desktop, falls von Relevanz.											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
-				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254930">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/50327-outrage/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/91/1684-91563c2c7d28a8ea0056f2079349676f662349dd-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/91/1684-91563c2c7d28a8ea0056f2079349676f662349dd-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/50327-outrage/">Outrage</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254930#post1254930" class="permalink"><time datetime="2015-11-17T22:42:52+01:00" class="datetime" data-timestamp="1447796572" data-date="17. November 2015" data-time="22:42" data-offset="3600">17. November 2015, 22:42</time></a>
-												</p>
-											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												<div class="quoteBoxAuthor">
-	<div class="quoteAuthorAvatar"><a href="http://dotasource.de/user/49054-der-busfahrer/" class="userLink framed" data-user-id="49054"><img src="http://dotasource.de/wcf/images/avatars/6f/1812-6fa145b0316538d5830218ba9c59a3d6c7017960-96.jpg" srcset="http://dotasource.de/wcf/images/avatars/6f/1812-6fa145b0316538d5830218ba9c59a3d6c7017960-128.jpg 2x" style="width: 64px; height: 64px" alt="" class="userAvatarImage" /></a></div>
-	<blockquote class="quoteBox container containerPadding" cite="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254905#post1254905">
-					<header>
-				<h3>
-											<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254905#post1254905">Der_Busfahrer. schrieb:</a>
-									</h3>
+												
+			<header class="boxHeadline boxSubHeadline">
+				<h2>Heute</h2>
 			</header>
-				
-		<div>
-			Threads aus ignorierten Foren werden noch immer angezeigt<br />
-		</div>
-	</blockquote>
-</div>
-Werde ich ab jetzt auch t‰glich anprangern <img src="http://dotasource.de/wcf/images/smilies/smiley35.gif" alt=":bluecool:" />											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
-				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254923">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/49277-spyken/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/ef/1650-ef83c5e9ba6b74f80c431ab5c0c7ed2d7665b2a9-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/ef/1650-ef83c5e9ba6b74f80c431ab5c0c7ed2d7665b2a9-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/49277-spyken/">Spyken-</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254923#post1254923" class="permalink"><time datetime="2015-11-17T22:30:31+01:00" class="datetime" data-timestamp="1447795831" data-date="17. November 2015" data-time="22:30" data-offset="3600">17. November 2015, 22:30</time></a>
-												</p>
+			
+			<div class="container marginTop">
+				<ul class="containerList userNotificationItemList">
+						<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138" data-link-replace-all="false" data-object-id="10925" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="betrayus_">
+								<img src="http://dotasource.de/wcf/images/avatars/11/1880-110fca3ffdc6f8ac6904e94ca592c2dcc15eeb88-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/11/1880-110fca3ffdc6f8ac6904e94ca592c2dcc15eeb88-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/55539-betrayus/" class="userLink" data-user-id="55539">betrayus_</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T15:38:26+01:00" class="datetime" data-timestamp="1447857506" data-date="18. November 2015" data-time="15:38" data-offset="3600">18. November 2015, 15:38</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												kommen die &quot;besten beitr‰ge&quot; noch in die profile? war zwischendurch ganz nett ein wenig durch die echt guten posts zu stˆbern und werden alle posts eines users in seinem profil wieder einsehbar?											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254905">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/49054-der-busfahrer/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/6f/1812-6fa145b0316538d5830218ba9c59a3d6c7017960-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/6f/1812-6fa145b0316538d5830218ba9c59a3d6c7017960-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/49054-der-busfahrer/">Der_Busfahrer.</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254905#post1254905" class="permalink"><time datetime="2015-11-17T22:07:57+01:00" class="datetime" data-timestamp="1447794477" data-date="17. November 2015" data-time="22:07" data-offset="3600">17. November 2015, 22:07</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36130-habt-ihr-angst-vor-terrorismus/?postID=1255287#post1255287" data-link-replace-all="false" data-object-id="10711" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="darkpotato">
+								<img src="http://dotasource.de/wcf/images/avatars/46/1421-46cdc94609f1bfbe9ba8f8ca7e29d8e18bd7a269-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/46/1421-46cdc94609f1bfbe9ba8f8ca7e29d8e18bd7a269.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/54542-darkpotato/" class="userLink" data-user-id="54542">darkpotato</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36130-habt-ihr-angst-vor-terrorismus/?postID=1255287#post1255287">Habt ihr Angst vor Terrorismus?</a>.								</p>
+								<p><small><time datetime="2015-11-18T14:24:58+01:00" class="datetime" data-timestamp="1447853098" data-date="18. November 2015" data-time="14:24" data-offset="3600">18. November 2015, 14:24</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												Threads aus ignorierten Foren werden noch immer angezeigt											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking5" data-object-id="1254892">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/38850-fugo/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/d0/1834-d0b4c152384d7f2b81e44a5d95e3a6339c8ca827-32.png" srcset="http://dotasource.de/wcf/images/avatars/d0/1834-d0b4c152384d7f2b81e44a5d95e3a6339c8ca827-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/38850-fugo/">fugo</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254892#post1254892" class="permalink"><time datetime="2015-11-17T21:31:01+01:00" class="datetime" data-timestamp="1447792261" data-date="17. November 2015" data-time="21:31" data-offset="3600">17. November 2015, 21:31</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem groupedNotificationItem" data-link="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1255285#post1255285" data-link-replace-all="false" data-object-id="10684" data-is-read="true" data-is-grouped="true">
+					<div class="box32">
+													<div class="framed">
+								<span class="icon icon32 fa-users"></span>
+							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="userLink" data-user-id="47611">ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ</a> und 3 weiteren gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1255285#post1255285">Der &quot;Dinge die ihr einfach mal mitteilen wollt&quot; Thread</a>.								</p>
+								<p><small><time datetime="2015-11-18T14:12:34+01:00" class="datetime" data-timestamp="1447852354" data-date="18. November 2015" data-time="14:12" data-offset="3600">18. November 2015, 14:12</time></small></p>
+								
+								<ul class="marginTopTiny">
+																														<li style="display: inline-block" class="jsTooltip" title="ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ"><a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-32.gif" srcset="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-96.gif 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="Jan"><a href="http://dotasource.de/user/51216-jan/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/2a/1657-2aad1dcaee759f903f6ebfa5a749b47d0c848f7a-32.gif" srcset="http://dotasource.de/wcf/images/avatars/2a/1657-2aad1dcaee759f903f6ebfa5a749b47d0c848f7a-96.gif 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="Kyuzo"><a href="http://dotasource.de/user/55212-kyuzo/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/71/1838-719b6afb3cf948559232bb4e6787a733a7625063-32.png" srcset="http://dotasource.de/wcf/images/avatars/71/1838-719b6afb3cf948559232bb4e6787a733a7625063-96.png 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="m-u-h"><a href="http://dotasource.de/user/5-m-u-h/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/2c/1826-2c596b6a5c011093400e19c94317e38ec047490a-32.gif" srcset="http://dotasource.de/wcf/images/avatars/2c/1826-2c596b6a5c011093400e19c94317e38ec047490a-96.gif 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																											</ul>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												jo die vorgefertigte community box hat die plauderecke und forenspiele nicht drin, eine selbst erstellte box kann aber beides beinhalten.<br />
-habs gerade getestet											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254891">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/36789-36789/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/ed/1841-ed17042202b9842d977a7b59044b9c02e77316f6-32.png" srcset="http://dotasource.de/wcf/images/avatars/ed/1841-ed17042202b9842d977a7b59044b9c02e77316f6-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/36789-36789/">36789</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254891#post1254891" class="permalink"><time datetime="2015-11-17T21:30:09+01:00" class="datetime" data-timestamp="1447792209" data-date="17. November 2015" data-time="21:30" data-offset="3600">17. November 2015, 21:30</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10640" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Nifunifa">
+								<img src="http://dotasource.de/wcf/images/avatars/9a/1850-9a2f631eba103d72f220c24784ab5d15a273d397-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/9a/1850-9a2f631eba103d72f220c24784ab5d15a273d397-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/56599-nifunifa/" class="userLink" data-user-id="56599">Nifunifa</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:45:22+01:00" class="datetime" data-timestamp="1447850722" data-date="18. November 2015" data-time="13:45" data-offset="3600">18. November 2015, 13:45</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												was in gottes namen											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking5" data-object-id="1254889">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/42358-trezc0/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/e7/1805-e7aafcb5c07723188aba5e8ef869666de2a89125-32.png" srcset="http://dotasource.de/wcf/images/avatars/e7/1805-e7aafcb5c07723188aba5e8ef869666de2a89125-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/42358-trezc0/">Trezc0</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254889#post1254889" class="permalink"><time datetime="2015-11-17T21:28:30+01:00" class="datetime" data-timestamp="1447792110" data-date="17. November 2015" data-time="21:28" data-offset="3600">17. November 2015, 21:28</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255253#post1255253" data-link-replace-all="false" data-object-id="10591" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ">
+								<img src="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-32.gif" srcset="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-96.gif 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="userLink" data-user-id="47611">ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255253#post1255253">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:32:19+01:00" class="datetime" data-timestamp="1447849939" data-date="18. November 2015" data-time="13:32" data-offset="3600">18. November 2015, 13:32</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												Liegt wohl daran, dass die Plauderecke in der Extrabox &quot;Plauderecke und Forenspiele&quot; ist. Hast du ne eigene erstellt, wo die Plauderecke mit drin sein sollte? Ansonsten einfach eine eigene machen wo beides zusammen drin ist.											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254885">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/36789-36789/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/ed/1841-ed17042202b9842d977a7b59044b9c02e77316f6-32.png" srcset="http://dotasource.de/wcf/images/avatars/ed/1841-ed17042202b9842d977a7b59044b9c02e77316f6-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/36789-36789/">36789</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254885#post1254885" class="permalink"><time datetime="2015-11-17T21:27:06+01:00" class="datetime" data-timestamp="1447792026" data-date="17. November 2015" data-time="21:27" data-offset="3600">17. November 2015, 21:27</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10586" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ">
+								<img src="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-32.gif" srcset="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-96.gif 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="userLink" data-user-id="47611">ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:31:46+01:00" class="datetime" data-timestamp="1447849906" data-date="18. November 2015" data-time="13:31" data-offset="3600">18. November 2015, 13:31</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												plauderecke und funstuff tauchen in meiner community box nicht auf, ist nicht auf ignore											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking3" data-object-id="1254883">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/52710-luke/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/3c/1847-3ce29dfa163495ce52517237be4f39a93c6ebd24-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/3c/1847-3ce29dfa163495ce52517237be4f39a93c6ebd24-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/52710-luke/">luke</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254883#post1254883" class="permalink"><time datetime="2015-11-17T21:25:44+01:00" class="datetime" data-timestamp="1447791944" data-date="17. November 2015" data-time="21:25" data-offset="3600">17. November 2015, 21:25</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255253#post1255253" data-link-replace-all="false" data-object-id="10526" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="kl0pper">
+								<img src="http://dotasource.de/wcf/images/avatars/f5/1877-f562e1099c38b31e9412c99c15a3a7eb40b34cd7-32.png" srcset="http://dotasource.de/wcf/images/avatars/f5/1877-f562e1099c38b31e9412c99c15a3a7eb40b34cd7-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/48753-kl0pper/" class="userLink" data-user-id="48753">kl0pper</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255253#post1255253">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:19:55+01:00" class="datetime" data-timestamp="1447849195" data-date="18. November 2015" data-time="13:19" data-offset="3600">18. November 2015, 13:19</time></small></p>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												<img src="http://i.imgur.com/EifcGsp.png" class="jsResizeImage" alt="" /><br />
-<br />
-padding please											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-											
-				<li class="marginTop">
-					<article class="message messageReduced userOnlineGroupMarking5" data-object-id="1254881">
-						<div>
-							<section class="messageContent">
-								<div>
-									<header class="messageHeader">
-										<div class="box32">
-																							<a href="http://dotasource.de/user/38850-fugo/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/d0/1834-d0b4c152384d7f2b81e44a5d95e3a6339c8ca827-32.png" srcset="http://dotasource.de/wcf/images/avatars/d0/1834-d0b4c152384d7f2b81e44a5d95e3a6339c8ca827-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" /></a>
-																						
-											<div class="messageHeadline">
-																								<p>
-													<span class="username"><a href="http://dotasource.de/user/38850-fugo/">fugo</a></span>
-													<a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1254881#post1254881" class="permalink"><time datetime="2015-11-17T21:21:50+01:00" class="datetime" data-timestamp="1447791710" data-date="17. November 2015" data-time="21:21" data-offset="3600">17. November 2015, 21:21</time></a>
-												</p>
+							<li class="jsNotificationItem notificationItem groupedNotificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10514" data-is-read="true" data-is-grouped="true">
+					<div class="box32">
+													<div class="framed">
+								<span class="icon icon32 fa-users"></span>
+							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/48753-kl0pper/" class="userLink" data-user-id="48753">kl0pper</a>, <a href="http://dotasource.de/user/50327-outrage/" class="userLink" data-user-id="50327">Outrage</a> und <a href="http://dotasource.de/user/45820-buktus/" class="userLink" data-user-id="45820">Buktus</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:19:49+01:00" class="datetime" data-timestamp="1447849189" data-date="18. November 2015" data-time="13:19" data-offset="3600">18. November 2015, 13:19</time></small></p>
+								
+								<ul class="marginTopTiny">
+																														<li style="display: inline-block" class="jsTooltip" title="kl0pper"><a href="http://dotasource.de/user/48753-kl0pper/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/f5/1877-f562e1099c38b31e9412c99c15a3a7eb40b34cd7-32.png" srcset="http://dotasource.de/wcf/images/avatars/f5/1877-f562e1099c38b31e9412c99c15a3a7eb40b34cd7-96.png 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="Outrage"><a href="http://dotasource.de/user/50327-outrage/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/91/1684-91563c2c7d28a8ea0056f2079349676f662349dd-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/91/1684-91563c2c7d28a8ea0056f2079349676f662349dd-96.jpg 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="Buktus"><a href="http://dotasource.de/user/45820-buktus/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/b3/1848-b3adc34e6274cef52e844f2f5f93c1dd097e2e8b-32.png" srcset="http://dotasource.de/wcf/images/avatars/b3/1848-b3adc34e6274cef52e844f2f5f93c1dd097e2e8b-96.png 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																											</ul>
+							</div>
 											</div>
-										</div>
-									</header>
-									
-									<div class="messageBody">
-										<div>
-											<div class="messageText">
-												man springt nun zum letzten post in ungelesenen posts<br />
-konnte es mir echt nicht abgewˆhnen :]<br />
- <img src="http://dotasource.de/wcf/images/smilies/thumbup.png" alt=":thumbup:" />											</div>
-										</div>
-										
-																				
-										<footer class="messageOptions">
-											<nav class="jsMobileNavigation buttonGroupNavigation">
-												<ul class="smallButtons buttonGroup"><li class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="button jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li></ul>
-											</nav>
-										</footer>
-									</div>
-								</div>
-							</section>
-						</div>
-					</article>
 				</li>
-					</ul>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10468" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Account l√∂schen.">
+								<img src="http://dotasource.de/wcf/images/avatars/00/1818-00c69fd07daf5647057b14fc0292de8dcfba4ba4-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/00/1818-00c69fd07daf5647057b14fc0292de8dcfba4ba4-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/56088-account-l%C3%B6schen/" class="userLink" data-user-id="56088">Account l√∂schen.</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:08:08+01:00" class="datetime" data-timestamp="1447848488" data-date="18. November 2015" data-time="13:08" data-offset="3600">18. November 2015, 13:08</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem groupedNotificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10461" data-is-read="true" data-is-grouped="true">
+					<div class="box32">
+													<div class="framed">
+								<span class="icon icon32 fa-users"></span>
+							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/50797-tripperk/" class="userLink" data-user-id="50797">TripperK</a> und <a href="http://dotasource.de/user/42848-tri66erk/" class="userLink" data-user-id="42848">Tri66erK</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:06:41+01:00" class="datetime" data-timestamp="1447848401" data-date="18. November 2015" data-time="13:06" data-offset="3600">18. November 2015, 13:06</time></small></p>
+								
+								<ul class="marginTopTiny">
+																														<li style="display: inline-block" class="jsTooltip" title="TripperK"><a href="http://dotasource.de/user/50797-tripperk/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/77/1869-776c1fc74d469bcd3987f8bb13f3f36c4d553050-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/77/1869-776c1fc74d469bcd3987f8bb13f3f36c4d553050-96.jpg 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																																								<li style="display: inline-block" class="jsTooltip" title="Tri66erK"><a href="http://dotasource.de/user/42848-tri66erk/" class="framed"><img src="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-32.png" srcset="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-96.png 2x" style="width: 24px; height: 24px" alt="" class="userAvatarImage" /></a></li>
+																											</ul>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245" data-link-replace-all="false" data-object-id="10445" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="roflgrins">
+								<img src="http://dotasource.de/wcf/images/avatars/fd/1783-fdb2f9ac599a3a8c270057dab76bb22a532343bf-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/fd/1783-fdb2f9ac599a3a8c270057dab76bb22a532343bf-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/44145-roflgrins/" class="userLink" data-user-id="44145">roflgrins</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255245#post1255245">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T13:04:22+01:00" class="datetime" data-timestamp="1447848262" data-date="18. November 2015" data-time="13:04" data-offset="3600">18. November 2015, 13:04</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255142#post1255142" data-link-replace-all="false" data-object-id="10302" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ">
+								<img src="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-32.gif" srcset="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-96.gif 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="userLink" data-user-id="47611">ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255142#post1255142">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T12:35:32+01:00" class="datetime" data-timestamp="1447846532" data-date="18. November 2015" data-time="12:35" data-offset="3600">18. November 2015, 12:35</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138" data-link-replace-all="false" data-object-id="10300" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ">
+								<img src="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-32.gif" srcset="http://dotasource.de/wcf/images/avatars/55/1866-55d2d1070ada298e073dc36816502b1e903acd14-96.gif 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/47611-%EF%BD%8B%EF%BD%8F%EF%BD%82%EF%BD%8F%EF%BD%8C%EF%BD%84/" class="userLink" data-user-id="47611">ÔΩãÔΩèÔΩÇÔΩèÔΩåÔΩÑ</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T12:35:30+01:00" class="datetime" data-timestamp="1447846530" data-date="18. November 2015" data-time="12:35" data-offset="3600">18. November 2015, 12:35</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1254941#post1254941" data-link-replace-all="false" data-object-id="10218" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Tri66erK">
+								<img src="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-32.png" srcset="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/42848-tri66erk/" class="userLink" data-user-id="42848">Tri66erK</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1254941#post1254941">Der &quot;Dinge die ihr einfach mal mitteilen wollt&quot; Thread</a>.								</p>
+								<p><small><time datetime="2015-11-18T12:22:56+01:00" class="datetime" data-timestamp="1447845776" data-date="18. November 2015" data-time="12:22" data-offset="3600">18. November 2015, 12:22</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1254938#post1254938" data-link-replace-all="false" data-object-id="10217" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Tri66erK">
+								<img src="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-32.png" srcset="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/42848-tri66erk/" class="userLink" data-user-id="42848">Tri66erK</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/26544-der-dinge-die-ihr-einfach-mal-mitteilen-wollt-thread/?postID=1254938#post1254938">Der &quot;Dinge die ihr einfach mal mitteilen wollt&quot; Thread</a>.								</p>
+								<p><small><time datetime="2015-11-18T12:22:48+01:00" class="datetime" data-timestamp="1447845768" data-date="18. November 2015" data-time="12:22" data-offset="3600">18. November 2015, 12:22</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36114-pimp-your-dotasource-stylish-plugin-guide-und-design-diskussion/?postID=1254473#post1254473" data-link-replace-all="false" data-object-id="10172" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Matlok">
+								<img src="http://dotasource.de/wcf/images/avatars/47/1679-4794100282fa3615e296cf73aaf70864e98e4e30-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/47/1679-4794100282fa3615e296cf73aaf70864e98e4e30-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/52898-matlok/" class="userLink" data-user-id="52898">Matlok</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36114-pimp-your-dotasource-stylish-plugin-guide-und-design-diskussion/?postID=1254473#post1254473">Pimp your dotasource - Stylish plugin guide und Design-Diskussion</a>.								</p>
+								<p><small><time datetime="2015-11-18T12:05:18+01:00" class="datetime" data-timestamp="1447844718" data-date="18. November 2015" data-time="12:05" data-offset="3600">18. November 2015, 12:05</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255175#post1255175" data-link-replace-all="false" data-object-id="10165" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Tri66erK">
+								<img src="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-32.png" srcset="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/42848-tri66erk/" class="userLink" data-user-id="42848">Tri66erK</a> hat Sie im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255175#post1255175">DotaSource Reborn</a> zitiert.								</p>
+								<p><small><time datetime="2015-11-18T12:02:57+01:00" class="datetime" data-timestamp="1447844577" data-date="18. November 2015" data-time="12:02" data-offset="3600">18. November 2015, 12:02</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138" data-link-replace-all="false" data-object-id="10060" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Jan">
+								<img src="http://dotasource.de/wcf/images/avatars/2a/1657-2aad1dcaee759f903f6ebfa5a749b47d0c848f7a-32.gif" srcset="http://dotasource.de/wcf/images/avatars/2a/1657-2aad1dcaee759f903f6ebfa5a749b47d0c848f7a-96.gif 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/51216-jan/" class="userLink" data-user-id="51216">Jan</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T11:40:38+01:00" class="datetime" data-timestamp="1447843238" data-date="18. November 2015" data-time="11:40" data-offset="3600">18. November 2015, 11:40</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138" data-link-replace-all="false" data-object-id="10040" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="TripperK">
+								<img src="http://dotasource.de/wcf/images/avatars/77/1869-776c1fc74d469bcd3987f8bb13f3f36c4d553050-32.jpg" srcset="http://dotasource.de/wcf/images/avatars/77/1869-776c1fc74d469bcd3987f8bb13f3f36c4d553050-96.jpg 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/50797-tripperk/" class="userLink" data-user-id="50797">TripperK</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T11:36:41+01:00" class="datetime" data-timestamp="1447843001" data-date="18. November 2015" data-time="11:36" data-offset="3600">18. November 2015, 11:36</time></small></p>
+							</div>
+											</div>
+				</li>
+							<li class="jsNotificationItem notificationItem" data-link="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138" data-link-replace-all="false" data-object-id="10027" data-is-read="true" data-is-grouped="false">
+					<div class="box32">
+													<div class="framed jsTooltip" title="Tri66erK">
+								<img src="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-32.png" srcset="http://dotasource.de/wcf/images/avatars/01/1787-01dcbbf7b722bf44f29802d4057add51569808f0-96.png 2x" style="width: 32px; height: 32px" alt="" class="userAvatarImage" />							</div>
+							
+							<div class="details">
+								<p>
+																		<a href="http://dotasource.de/user/42848-tri66erk/" class="userLink" data-user-id="42848">Tri66erK</a> gef√§llt Ihr Beitrag im Thema <a href="http://dotasource.de/thread/36094-dotasource-reborn/?postID=1255138#post1255138">DotaSource Reborn</a>.								</p>
+								<p><small><time datetime="2015-11-18T11:34:51+01:00" class="datetime" data-timestamp="1447842891" data-date="18. November 2015" data-time="11:34" data-offset="3600">18. November 2015, 11:34</time></small></p>
+							</div>
+											</div>
+				</li>
+			</ul>
+	</div>
+	
+	<div class="contentNavigation">
+		<nav class="pageNavigation" data-link="http://dotasource.de/notification-list/?pageNo=%d" data-pages="15">
+<ul>
+<li class="skip disabled"><span class="icon icon16 icon-double-angle-left disabled"></span></li>
+<li class="button active"><span>1</span><span class="invisible">Seite 1 von 15</span></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=2" title="Seite 2">2</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=3" title="Seite 3">3</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=4" title="Seite 4">4</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=5" title="Seite 5">5</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=6" title="Seite 6">6</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=7" title="Seite 7">7</a></li>
+<li class="button jumpTo"><a title="Gehe zu Seite" class="jsTooltip">‚Ä¶</a></li>
+<li class="button"><a href="http://dotasource.de/notification-list/?pageNo=15" title="Seite 15">15</a></li>
+<li class="button skip"><a href="http://dotasource.de/notification-list/?pageNo=2" title="N√§chste Seite" class="jsTooltip"><span class="icon icon16 icon-double-angle-right"></span></a></li>
+</ul></nav>
+		
+		
 	</div>
 
 					<div class="container marginTop switchToDesktopViewContainer">
@@ -1056,18 +738,6 @@ konnte es mir echt nicht abgewˆhnen :]<br />
 			<li title="DotaSource">
 						<a href="http://dotasource.de/"><span>DotaSource</span></a> <span class="pointer"><span>&raquo;</span></span>
 					</li>
-									<li title="Forum">
-						<a href="http://dotasource.de/board-list/"><span>Forum</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="DotaSource">
-						<a href="http://dotasource.de/board/20-dotasource/"><span>DotaSource</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="Update">
-						<a href="http://dotasource.de/board/286-update/"><span>Update</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
-									<li title="DotaSource Reborn">
-						<a href="http://dotasource.de/thread/36094-dotasource-reborn/"><span>DotaSource Reborn</span></a> <span class="pointer"><span>&raquo;</span></span>
-					</li>
 		</ul>
 	</nav>
 				
@@ -1077,21 +747,21 @@ konnte es mir echt nicht abgewˆhnen :]<br />
 	</div>
 </div>
 
-<footer id="pageFooter" class="layoutFluid footer">
+<footer id="pageFooter" class="layoutFluid footer sidebarOrientationLeft">
 	<div>
 		<nav id="footerNavigation" class="navigation navigationFooter">
 				<ul class="navigationMenuItems">
-					<li data-menu-item="wcf.page.privacyPolicy"><a href="http://dotasource.de/privacy-policy/">Datenschutzerkl‰rung</a></li>
+					<li data-menu-item="wcf.page.privacyPolicy"><a href="http://dotasource.de/privacy-policy/">Datenschutzerkl√§rung</a></li>
 					<li data-menu-item="wcf.footer.menu.legalNotice"><a href="http://dotasource.de/legal-notice/">Impressum</a></li>
 			</ul>
 			
 			<ul class="navigationIcons">
-				<li id="toTopLink" class="toTopLink"><a href="http://dotasource.de/post-edit/1254968/#top" title="Zum Seitenanfang" class="jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li>
+				<li id="toTopLink" class="toTopLink"><a href="http://dotasource.de/notification-list/#top" title="Zum Seitenanfang" class="jsTooltip"><span class="icon icon16 icon-arrow-up"></span> <span class="invisible">Zum Seitenanfang</span></a></li>
 				
 			</ul>
 			
 			<ul class="navigationItems">
-									<li title="(UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien"><p><span class="icon icon16 icon-time"></span> <span>18. November 2015, 10:49</span></p></li>
+									<li title="(UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien"><p><span class="icon icon16 icon-time"></span> <span>18. November 2015, 15:47</span></p></li>
 											</ul>
 		</nav>
 		
@@ -1115,7 +785,7 @@ konnte es mir echt nicht abgewˆhnen :]<br />
 	WCF.Language.addObject({
 		'__days': [ 'Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag' ],
 		'__daysShort': [ 'So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa' ],
-		'__months': [ 'Januar', 'Februar', 'M‰rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember' ], 
+		'__months': [ 'Januar', 'Februar', 'M√§rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember' ], 
 		'__monthsShort': [ 'Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez' ],
 		'wcf.clipboard.item.unmarkAll': 'Demarkieren',
 		'wcf.date.relative.now': 'Vor einem Moment',
@@ -1129,61 +799,61 @@ konnte es mir echt nicht abgewˆhnen :]<br />
 		'wcf.date.minute': 'Minute',
 		'wcf.date.timeFormat': 'H:i',
 		'wcf.date.firstDayOfTheWeek': '1',
-		'wcf.global.button.add': 'Hinzuf¸gen',
+		'wcf.global.button.add': 'Hinzuf√ºgen',
 		'wcf.global.button.cancel': 'Abbrechen',
-		'wcf.global.button.close': 'Schlieﬂen',
+		'wcf.global.button.close': 'Schlie√üen',
 		'wcf.global.button.collapsible': 'Auf- und Zuklappen',
-		'wcf.global.button.delete': 'Lˆschen',
+		'wcf.global.button.delete': 'L√∂schen',
 		'wcf.global.button.disable': 'Deaktivieren',
 		'wcf.global.button.disabledI18n': 'einsprachig',
 		'wcf.global.button.edit': 'Bearbeiten',
 		'wcf.global.button.enable': 'Aktivieren',
 		'wcf.global.button.hide': 'Ausblenden',
-		'wcf.global.button.next': 'Weiter ª',
+		'wcf.global.button.next': 'Weiter ¬ª',
 		'wcf.global.button.preview': 'Vorschau',
-		'wcf.global.button.reset': 'Zur¸cksetzen',
+		'wcf.global.button.reset': 'Zur√ºcksetzen',
 		'wcf.global.button.save': 'Speichern',
 		'wcf.global.button.search': 'Suche',
 		'wcf.global.button.submit': 'Absenden',
 		'wcf.global.button.upload': 'Hochladen',
 		'wcf.global.confirmation.cancel': 'Abbrechen',
 		'wcf.global.confirmation.confirm': 'OK',
-		'wcf.global.confirmation.title': 'Best‰tigung erforderlich',
+		'wcf.global.confirmation.title': 'Best√§tigung erforderlich',
 		'wcf.global.decimalPoint': ',',
 		'wcf.global.error.timeout': 'Keine Antwort vom Server erhalten, Anfrage wurde abgebrochen.',
-		'wcf.global.form.error.empty': 'Bitte f¸llen Sie dieses Eingabefeld aus.',
-		'wcf.global.form.error.greaterThan': 'Der eingegebene Wert muss grˆﬂer sein als {#$greaterThan}.',
+		'wcf.global.form.error.empty': 'Bitte f√ºllen Sie dieses Eingabefeld aus.',
+		'wcf.global.form.error.greaterThan': 'Der eingegebene Wert muss gr√∂√üer sein als {#$greaterThan}.',
 		'wcf.global.form.error.lessThan': 'Der eingegebene Wert muss kleiner sein als {#$lessThan}.',
 		'wcf.global.language.noSelection': 'Keine Auswahl',
-		'wcf.global.loading': 'L‰dt Ö',
+		'wcf.global.loading': 'L√§dt ‚Ä¶',
 		'wcf.global.page.jumpTo': 'Gehe zu Seite',
-		'wcf.global.page.jumpTo.description': 'Geben Sie einen Wert zwischen Ñ1ì und Ñ#pages#ì ein.',
+		'wcf.global.page.jumpTo.description': 'Geben Sie einen Wert zwischen ‚Äû1‚Äú und ‚Äû#pages#‚Äú ein.',
 		'wcf.global.page.pageNavigation': 'Navigation',
-		'wcf.global.page.next': 'N‰chste Seite',
+		'wcf.global.page.next': 'N√§chste Seite',
 		'wcf.global.page.previous': 'Vorherige Seite',
 		'wcf.global.pageDirection': 'ltr',
-		'wcf.global.reason': 'Begr¸ndung',
+		'wcf.global.reason': 'Begr√ºndung',
 		'wcf.global.sidebar.hideLeftSidebar': '',
 		'wcf.global.sidebar.hideRightSidebar': '',
 		'wcf.global.sidebar.showLeftSidebar': '',
 		'wcf.global.sidebar.showRightSidebar': '',
-		'wcf.global.success': 'Die Aktion wurde erfolgreich ausgef¸hrt.',
+		'wcf.global.success': 'Die Aktion wurde erfolgreich ausgef√ºhrt.',
 		'wcf.global.success.add': 'Der Eintrag wurde gespeichert.',
-		'wcf.global.success.edit': 'Ihre ƒnderungen wurden gespeichert.',
+		'wcf.global.success.edit': 'Ihre √Ñnderungen wurden gespeichert.',
 		'wcf.global.thousandsSeparator': '.',
 		'wcf.page.pagePosition': 'Seite {#$pageNo} von {#$pages}',
 		'wcf.page.sitemap': 'Schnellnavigation',
-		'wcf.style.changeStyle': 'Stil ‰ndern',
+		'wcf.style.changeStyle': 'Stil √§ndern',
 		'wcf.user.activityPoint': 'Punkte',
-		'wcf.style.changeStyle': 'Stil ‰ndern',
+		'wcf.style.changeStyle': 'Stil √§ndern',
 		'wcf.user.panel.markAllAsRead': 'Alle als gelesen markieren',
 		'wcf.user.panel.markAsRead': 'Als gelesen markieren',
 		'wcf.user.panel.settings': 'Einstellungen',
 		'wcf.user.panel.showAll': 'Alle anzeigen'
-					,'wcf.like.button.like': 'Gef‰llt mir',
-			'wcf.like.button.dislike': 'Gef‰llt mir nicht',
+					,'wcf.like.button.like': 'Gef√§llt mir',
+			'wcf.like.button.dislike': 'Gef√§llt mir nicht',
 			'wcf.like.tooltip': '{if $likes}{#$likes} Like{if $likes != 1}s{/if}{if $dislikes}, {/if}{/if}{if $dislikes}{#$dislikes} Dislike{if $dislikes != 1}s{/if}{/if}',
-			'wcf.like.summary': '{if $others == 0}{@$users.slice(0, -1).join(", ")}{if $users.length > 1} und {/if}{@$users.slice(-1)[0]}{else}{@$users.join(", ")} und {if $others == 1}einem{else}{#$others}{/if} weiteren{/if} gef‰llt das.',
+			'wcf.like.summary': '{if $others == 0}{@$users.slice(0, -1).join(", ")}{if $users.length > 1} und {/if}{@$users.slice(-1)[0]}{else}{@$users.join(", ")} und {if $others == 1}einem{else}{#$others}{/if} weiteren{/if} gef√§llt das.',
 			'wcf.like.details': 'Details'
 				
 		
@@ -1249,9 +919,9 @@ konnte es mir echt nicht abgewˆhnen :]<br />
 				'wcf.imageViewer.button.full': 'Originalversion aufrufen',
 				'wcf.imageViewer.seriesIndex': '{x} von {y}',
 				'wcf.imageViewer.counter': 'Bild {x} von {y}',
-				'wcf.imageViewer.close': 'Schlieﬂen',
+				'wcf.imageViewer.close': 'Schlie√üen',
 				'wcf.imageViewer.enlarge': 'Bild direkt anzeigen',
-				'wcf.imageViewer.next': 'N‰chstes Bild',
+				'wcf.imageViewer.next': 'N√§chstes Bild',
 				'wcf.imageViewer.previous': 'Vorheriges Bild'
 			});
 			
@@ -1309,29 +979,11 @@ WCF.DOMNodeInsertedHandler.execute();
 		//<![CDATA[
 		$(function() {
 			WCF.Language.addObject({
-				'wcf.message.bbcode.code.copy': 'Inhalt kopieren'
+				'wcf.user.notification.markAsConfirmed': 'Als gelesen markieren',
+				'wcf.user.notification.markAllAsConfirmed.confirmMessage': 'Wollen Sie wirklich alle Benachrichtigungen als gelesen markieren?'
 			});
 			
-						
-			WCF.Language.addObject({
-	'wcf.message.quote.insertAllQuotes': 'Alle Zitate einf¸gen',
-	'wcf.message.quote.insertSelectedQuotes': 'Markierte Zitate einf¸gen',
-	'wcf.message.quote.manageQuotes': 'Zitate verwalten',
-	'wcf.message.quote.quoteSelected': 'Zitat speichern',
-	'wcf.message.quote.quoteAndReply': 'Zitat einf¸gen',
-	'wcf.message.quote.removeAllQuotes': 'Alle Zitate entfernen',
-	'wcf.message.quote.removeSelectedQuotes': 'Markierte Zitate entfernen',
-	'wcf.message.quote.showQuotes': 'Zitate (#count#)'
-});
-
-var $quoteManager = new WCF.Message.Quote.Manager(0, 'text', false, [  ]);
-			new WBB.Post.QuoteHandler($quoteManager);
-			
-			WCF.Message.Submit.registerButton('text', $('#messageContainer > .formSubmit > input[type=submit]'));
-			new WCF.Message.FormGuard();
-			new WCF.Message.BBCode.CodeViewer();
-			
-			WCF.System.Dependency.Manager.register('Redactor_text', function() { new WCF.Message.UserMention('text'); });
+			new WCF.Notification.List();
 		});
 		//]]>
 	</script>
@@ -1376,83 +1028,15 @@ var $quoteManager = new WCF.Message.Quote.Manager(0, 'text', false, [  ]);
 		//]]>
 	</script>
 <script>
-				//<![CDATA[
-				$('#deletePost').change(function (event) {
-					if ($('#deletePost').is(':checked')) {
-						$('#deleteReasonDL').show();
-					}
-					else {
-						$('#deleteReasonDL').hide();
-					}
-				});
-				$('#deletePost').change();
-				//]]>
-			</script>
-<script>
-			//<![CDATA[
-			$(function() {
-				new WCF.Message.SmileyCategories('text');
-			});
-			//]]>
-		</script>
-<script>
 		//<![CDATA[
 		$(function() {
-			new WCF.Message.Smilies('text');
+			// mobile safari hover workaround
+			if ($(window).width() <= 800) {
+				$('.sidebar').addClass('mobileSidebar').hover(function() { });
+			}
 		});
 		//]]>
 	</script>
-<script>
-	//<![CDATA[
-	$(function() {
-		WCF.Language.addObject({
-			'wcf.attachment.upload.error.invalidExtension': 'Die Datei hat eine ung¸ltige Dateiendung.',
-			'wcf.attachment.upload.error.tooLarge': 'Die Datei ist zu groﬂ.',
-			'wcf.attachment.upload.error.reachedLimit': 'Sie haben die maximale Anzahl an Dateianh‰ngen erreicht.',
-			'wcf.attachment.upload.error.reachedRemainingLimit': 'Sie haben zu viele Dateianh‰nge ausgew‰hlt, maximal verbleibend: #remaining#.',
-			'wcf.attachment.upload.error.uploadFailed': 'Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.',
-			'wcf.attachment.insert': 'In Text einf¸gen',
-			'wcf.attachment.insertAll': 'Alle einf¸gen',
-			'wcf.attachment.insertFull': 'Original einf¸gen',
-			'wcf.attachment.insertThumbnail': 'Vorschau einf¸gen',
-			'wcf.attachment.delete.sure': 'Wollen Sie den Dateianhang wirklich lˆschen?'
-		});
-		
-		new WCF.Attachment.Upload($('#attachments_text > dl > dd > div'), $('#attachments_text > ul'), 'com.woltlab.wbb.post', '1254968', '3470dba6a290c45dcc030e11a66054c89a5441de', '0', 10, 'text');
-		new WCF.Action.Delete('wcf\\data\\attachment\\AttachmentAction', '.formAttachmentList > li');
-	});
-	//]]>
-</script>
-<script>
-		//<![CDATA[
-		$(function() {
-			WCF.Language.addObject({
-				'wcf.poll.button.addOption': 'Weitere Antwort hinzuf¸gen',
-				'wcf.poll.button.removeOption': 'Antwort entfernen'
-			});
-			
-			new WCF.Poll.Management('pollOptionContainer', [  ], 48);
-		});
-		//]]>
-	</script>
-<script>
-	//<![CDATA[
-	$(function() {
-		$('.messageTabMenu').messageTabMenu();
-	});
-	//]]>
-</script>
-<script>
-	//<![CDATA[
-	$(function() {
-		WCF.Language.addObject({
-			'wcf.global.preview': 'Vorschau' 
-		});
-		
-		new WCF.Message.DefaultPreview('com.woltlab.wbb.post', '1254968', '3470dba6a290c45dcc030e11a66054c89a5441de');
-	});
-	//]]>
-</script>
 <script>	
 	$(document).ready(function() {
 		$("iframe[id^='tweet_']").load(function() {
@@ -1485,175 +1069,9 @@ var $quoteManager = new WCF.Message.Quote.Manager(0, 'text', false, [  ]);
 												});
 			//]]>
 		</script>
-<script>
-var __REDACTOR_ICON_PATH = 'http://dotasource.de/wcf/icon/';
-var __REDACTOR_BUTTONS = [ { icon: 'fa-quote-left', label: 'Zitat', name: 'quote' }, { icon: 'fa-code', label: 'Code', name: 'code' }, { icon: 'fa-eye-slash', label: 'Spoiler', name: 'spoiler' }, { icon: 'fa-terminal', label: 'Inline-Code', name: 'tt' }, { icon: 'tabmenuBBCodeIcon.png', label: 'Tabmen¸', name: 'tabmenu' } ];
-var __REDACTOR_SMILIES = { ':)': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smile.png', ':(': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/sad.png', ';)': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/wink.png', ':P': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/tongue.png', '^^': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/grin.png', ':D': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/biggrin.png', ';(': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/crying.png', 'X(': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/angry.png', ':*': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/kiss.png', ':|': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/mellow.png', '8o': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/w00t.png', '=O': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/scared.png', '<X': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/sick.png', ':\/': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/unsure.png', ':S': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/wacko.png', 'X\/': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/pinch.png', '8)': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/cool.png', '?(': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/confused.png', ':huh:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/huh.png', ':rolleyes:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/rolleyes.png', ':love:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/love.png', '8|': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/blink.png', ':cursing:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/cursing.png', ':thumbdown:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/thumbdown.png', ':thumbsup:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/thumbsup.png', ':thumbup:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/thumbup.png', ':sleeping:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/sleeping.png', ':whistling:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/whistling.png', ':chinese:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley36.png', ':fine:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley38.gif', ':evil:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/evil.png', ':saint:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/saint.png', '<3': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/heart.png', ':!:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/attention.png', ':?:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/question.png', ':bluecool:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley35.gif', ':fresse:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley39.gif', ':ugly:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley44.gif', ':grinking:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley41.gif', ':xmas:': 'http:\/\/dotasource.de\/wcf\/images\/smilies\/smiley45.gif' };
-var __REDACTOR_SOURCE_BBCODES = [ 'code', 'media', 'tt' ];
-var __REDACTOR_CODE_HIGHLIGHTERS = { 'bash': 'Shell-Script', 'brainfuck': 'Brainfuck-Quellcode', 'c': 'C-Quellcode', 'css': 'CSS-Quellcode', 'diff': 'Unterschiede-Datei', 'html': 'HTML-Quellcode', 'java': 'Java-Quellcode', 'js': 'JavaScript-Quellcode', 'perl': 'Perl-Quellcode', 'php': 'PHP-Quellcode', 'plain': 'Quellcode', 'python': 'Python-Quellcode', 'sql': 'SQL-Abfrage', 'tex': 'TeX-Quellcode', 'tpl': 'Smarty-Template', 'xml': 'XML-Quellcode' };
-</script>
-<script>
-$(function() {
-	WCF.Language.addObject({
-		'wcf.attachment.dragAndDrop.dropHere': 'Hierhin ziehen und loslassen um Dateien hochzuladen',
-		'wcf.attachment.dragAndDrop.dropNow': 'Jetzt loslassen um Dateien hochzuladen',
-		'wcf.bbcode.button.fontColor': 'Schriftfarbe',
-		'wcf.bbcode.button.fontFamily': 'Schriftart',
-		'wcf.bbcode.button.fontSize': 'Schriftgrˆﬂe',
-		'wcf.bbcode.button.image': 'Bild',
-		'wcf.bbcode.button.redo': 'Wiederholen',
-		'wcf.bbcode.button.subscript': 'Tiefgestellt',
-		'wcf.bbcode.button.superscript': 'Hochgestellt',
-		'wcf.bbcode.button.toggleBBCode': 'BBCode',
-		'wcf.bbcode.button.toggleHTML': 'WYSIWYG',
-		'wcf.bbcode.button.undo': 'R¸ckg‰ngig',
-		'wcf.bbcode.code': 'Quellcode',
-		'wcf.bbcode.code.edit': 'Quellcode bearbeiten',
-		'wcf.bbcode.code.filename': 'Dateiname',
-		'wcf.bbcode.code.filename.description': 'Optional: Legen Sie einen anzuzeigenden Dateinamen fest.',
-		'wcf.bbcode.code.highlighter': 'Syntax-Hervorherbung',
-		'wcf.bbcode.code.highlighter.description': 'Die farbliche Hervorherbung wird im Editor nicht angezeigt.',
-		'wcf.bbcode.code.highlighter.none': '(Keine Hervorhebung)',
-		'wcf.bbcode.code.insert': 'Quellcode einf¸gen',
-		'wcf.bbcode.code.lineNumber': 'Start-Zeilennummer',
-		'wcf.bbcode.code.lineNumber.description': 'Optional: Legen Sie den Wert fest, ab dem die Zeilennummierung startet.',
-		'wcf.bbcode.code.settings': 'Einstellungen',
-		'wcf.bbcode.image.source': 'Bild-Link',
-		'wcf.bbcode.quote.edit': 'Zitat bearbeiten',
-		'wcf.bbcode.quote.edit.author': 'Autor',
-		'wcf.bbcode.quote.edit.link': 'Quelle',
-		'wcf.bbcode.quote.insert': 'Zitat einf¸gen',
-		'wcf.bbcode.quote.title.clickToSet': '(Klicken um eine Quelle anzugeben)',
-		'wcf.bbcode.quote.title.javascript': '{$quoteAuthor} schrieb:',
-		'wcf.global.noSelection': '(Keine Auswahl)',
-		'wcf.message.autosave.prompt': 'Gespeicherten Entwurf wiederherstellen?',
-		'wcf.message.autosave.prompt.confirm': 'Entwurf wiederherstellen',
-		'wcf.message.autosave.prompt.discard': 'Entwurf verwerfen',
-		'wcf.message.autosave.restored': 'Entwurf wiederhergestellt',
-		'wcf.message.autosave.restored.confirm': 'Beibehalten',
-		'wcf.message.autosave.restored.revert': 'Verwerfen und Editor leeren',
-		'wcf.message.autosave.restored.revert.confirmMessage': 'Wollen Sie den gespeicherten Entwurf wirklich lˆschen und den Editor leeren?',
-		'wcf.message.autosave.restored.version': 'Entwurf vom {@$date}',
-		'wcf.message.autosave.saved': 'Entwurf gespeichert'
-	});
-	
-	var $editorName = 'text';
-	var $callbackIdentifier = 'Redactor_' + $editorName;
-	
-	WCF.System.Dependency.Manager.setup($callbackIdentifier, function() {
-		var $textarea = $('#' + $editorName);
-		var $buttons = [ ];
-		
-		$buttons.push('html');
-
-$buttons.push('separator');
-
-	$buttons.push('bold');
-	$buttons.push('italic');
-	$buttons.push('underline');
-
-if ($buttons.length) {
-	$buttons.push('separator');
-}
-
-	$buttons.push('deleted');
-	$buttons.push('subscript');
-	$buttons.push('superscript');
-
-if ($buttons.length && $buttons[$buttons.length -1] != 'separator') {
-	$buttons.push('separator');
-}
-
-	$buttons.push('orderedlist');
-	$buttons.push('unorderedlist');
-	$buttons.push('outdent');
-	$buttons.push('indent');
-	$buttons.push('alignment');
-
-if ($buttons.length && $buttons[$buttons.length -1] != 'separator') {
-	$buttons.push('separator');
-}
-
-	$buttons.push('fontfamily');
-	$buttons.push('fontsize');
-	$buttons.push('fontcolor');
-
-if ($buttons.length && $buttons[$buttons.length -1] != 'separator') {
-	$buttons.push('separator');
-}
-
-	$buttons.push('link');
-	$buttons.push('image');
-	$buttons.push('table');
-
-if ($buttons.length && $buttons[$buttons.length -1] != 'separator') {
-	$buttons.push('separator');
-}
-		
-		var $autosave = $textarea.data('autosave');
-		var $autosaveLastEditTime = ($autosave && $textarea.data('autosaveLastEditTime')) ? (parseInt($textarea.data('autosaveLastEditTime')) || 0) : 0;
-		var $autosavePrompt = ($autosave && $textarea.data('autosavePrompt')) ? true : false;
-		var $config = {
-			autosave: false,
-			buttons: $buttons,
-			convertImageLinks: false,
-			convertUrlLinks: false,
-			convertVideoLinks: false,
-			direction: 'ltr',
-			lang: 'de',
-			maxHeight: 500,
-			minHeight: 200,
-			plugins: [ 'wutil', 'wmonkeypatch', 'wbutton', 'wbbcode', 'wfontcolor', 'wfontfamily', 'wfontsize' ],
-			removeEmpty: false,
-			replaceDivs: false,
-			source: true,
-			tabifier: false,
-			toolbarFixed: false,
-			woltlab: {
-				autosave: {
-					active: ($autosave) ? true : false,
-					key: ($autosave) ? '1a03ea65_' + $autosave : '',
-					lastEditTime: $autosaveLastEditTime,
-					prefix: '1a03ea65',
-					prompt: $autosavePrompt,
-					saveOnInit: false				},
-				originalValue: $textarea.val()
-			}
-		};
-		
-					$config.plugins.splice(2, 0, 'table');
-				
-		if ($.browser.iOS) {
-			// using a zero-width space breaks iOS' detection of the start of a sentence, causing the first word to be lowercased
-			$config.emptyHtml = '<p><br></p>';
-		}
-		
-					$config.plugins.push('wupload');
-			$config.woltlab.attachmentUrl = 'http://dotasource.de/attachment/987654321/';
-			$config.woltlab.attachmentThumbnailUrl = 'http://dotasource.de/attachment/987654321/?thumbnail=1';
-				
-		
-		
-		// clear textarea before init
-		$textarea.val('');
-		
-		$textarea.redactor($config);
-	});
-	
-	head.load([
-		'http://dotasource.de/wcf/js/3rdParty/redactor/redactor.min.js?v=1447611272',
-		'http://dotasource.de/wcf/js/3rdParty/redactor/languages/de.js?v=1447611272',					'http://dotasource.de/wcf/js/3rdParty/redactor/plugins/wcombined.min.js?v=1447611272'
-				
-	], function() {
-		WCF.System.Dependency.Manager.invoke($callbackIdentifier);
-	});
-});
-</script>
 
 
 <a id="bottom"></a>
-
-
 
 </body>
 </html>

@@ -5,8 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 
@@ -19,23 +17,18 @@ public class Test {
 
 	public static void main(String[] args) throws IOException, ParseException {
 		DotasourceManager manager = new DotasourceManager();
-Notification notification = new Notification("1337", 1, null, new ArrayList<User>());
-		//		ArrayList<User> users = new ArrayList<>();
-//		users.add(new User("1337", "yolobernd"));
-//		Notification notification = new Notification("1337", Notification.TYPE_LIKE, new Date(0), users);
-//		updateLikes(notification);
-		String input = getPost(notification.getPostId());
-		Matcher m = LikeTable.PATTERN_LIKE_TABLE.matcher(input);
-		String content;
-		LikeTable likeTable;
-		if (m.find()) { // liketable bereits vorhanden
-			content = m.group("content");
-			likeTable = LikeTable.parse(m.group("liketable"), notification.getPostId());
-		} else {
-			content = input;
-			likeTable = new LikeTable();
+		BufferedReader br = new BufferedReader(new FileReader("src/dotasource/api/input.txt"));
+		String line;
+		String input = "";
+		while ((line = br.readLine()) != null) {
+			input += line+"\n";
 		}
-		System.out.println(likeTable);
+		br.close();
+		List<Notification> notifications = Notification.parse(input);
+		System.out.println("Anzahl: "+notifications.size());
+		for (Notification notification: notifications){
+			System.out.println(notification);
+		}
 	}
 
 	

@@ -33,4 +33,9 @@ public class User{
 	public String toString() {
 		return name + " (" + id + ")";
 	}
+	
+	@Override
+	public int hashCode(){
+		return id.hashCode();
+	}
 }

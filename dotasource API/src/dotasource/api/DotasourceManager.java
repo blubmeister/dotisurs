@@ -36,7 +36,7 @@ public class DotasourceManager {
 	public static final String COOKIE_PASSWORD = "wcf21_password";
 	public static final String COOKIE_HASH = "wcf21_cookieHash";
 
-	public static final Pattern PATTERN_PAGE_NUMBER = Pattern.compile(Pattern.quote("http://dotasource.de/notification-list/?pageNo=") + "([0-9]+)\"",Pattern.DOTALL);
+	public static final Pattern PATTERN_PAGE_NUMBER = Pattern.compile(Pattern.quote("http://dotasource.de/notification-list/?pageNo=") + "([0-9]++)",Pattern.DOTALL);
 	public static final Pattern PATTERN_POST_CONTENT = Pattern.compile("id=\"text\".*?>(.*?)</textarea>",Pattern.DOTALL);
 	public static final Pattern PATTERN_EDIT_POST_FORM = Pattern.compile(Pattern.quote("action=\"http://dotasource.de/post-edit") + ".*?>(.*?)</form>", Pattern.DOTALL);
 	public static final Pattern PATTERN_INPUT_TYPE = Pattern.compile("<input type=.*?name=\"(?<name>.*?)\".*?value=\"(?<value>.*?)\"",Pattern.DOTALL);
