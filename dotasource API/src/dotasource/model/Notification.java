@@ -141,8 +141,13 @@ public class Notification {
 	@Override
 	public boolean equals(Object other) {
 		if (other instanceof Notification) {
-			return date.equals(((Notification) other).date) && users.containsAll(((Notification) other).getUsers()) && ((Notification) other).getUsers().containsAll(users);
+			return date.equals(((Notification) other).date) && postId.equals(((Notification) other).postId) && users.containsAll(((Notification) other).getUsers()) && ((Notification) other).getUsers().containsAll(users);
 		}
 		return false;
+	}
+	
+	@Override 
+	public int hashCode(){
+		return (date+"#"+postId).hashCode();
 	}
 }

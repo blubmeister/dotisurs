@@ -32,18 +32,18 @@ import dotasource.model.User;
 
 public class DotasourceManager {
 
-	private static final String COOKIE_USER_ID = "wcf21_userID";
-	private static final String COOKIE_PASSWORD = "wcf21_password";
-	private static final String COOKIE_HASH = "wcf21_cookieHash";
+	public static final String COOKIE_USER_ID = "wcf21_userID";
+	public static final String COOKIE_PASSWORD = "wcf21_password";
+	public static final String COOKIE_HASH = "wcf21_cookieHash";
 
-	private static final Pattern PATTERN_PAGE_NUMBER = Pattern.compile(Pattern.quote("http://dotasource.de/notification-list/?pageNo=") + "([0-9]+)\"");
-	private static final Pattern PATTERN_POST_CONTENT = Pattern.compile("id=\"text\".*?>(.*?)</textarea>");
-	private static final Pattern PATTERN_EDIT_POST_FORM = Pattern.compile(Pattern.quote("action=\"http://dotasource.de/post-edit") + ".*?>(.*?)</form>", Pattern.DOTALL);
-	private static final Pattern PATTERN_INPUT_TYPE = Pattern.compile("<input type=.*?name=\"(?<name>.*?)\".*?value=\"(?<value>.*?)\"");
+	public static final Pattern PATTERN_PAGE_NUMBER = Pattern.compile(Pattern.quote("http://dotasource.de/notification-list/?pageNo=") + "([0-9]+)\"",Pattern.DOTALL);
+	public static final Pattern PATTERN_POST_CONTENT = Pattern.compile("id=\"text\".*?>(.*?)</textarea>",Pattern.DOTALL);
+	public static final Pattern PATTERN_EDIT_POST_FORM = Pattern.compile(Pattern.quote("action=\"http://dotasource.de/post-edit") + ".*?>(.*?)</form>", Pattern.DOTALL);
+	public static final Pattern PATTERN_INPUT_TYPE = Pattern.compile("<input type=.*?name=\"(?<name>.*?)\".*?value=\"(?<value>.*?)\"",Pattern.DOTALL);
 
 	private String userId = "56063";
 	private String passwordHash = "%242a%2408%24Q6QgPka8tAlGDWAeMbB1Mud3BlXDTm%2FX4R4qVWHlqKMkS0VP2RxFe";
-	private String cookieHash = "e9d1794fe0e2576552eefdcdfb1f43b32c4be2f6";
+	private String cookieHash = "9125b53871d6b3b342c1ba06ed7c0b04cde3e347";
 	private CloseableHttpClient client;
 
 	public DotasourceManager() {
@@ -52,12 +52,15 @@ public class DotasourceManager {
 		CookieStore cookieStore = new BasicCookieStore();
 		BasicClientCookie cookie = new BasicClientCookie(COOKIE_USER_ID, userId);
 		cookie.setDomain(".dotasource.de");
-		// cookieStore.addCookie(cookie);
+		cookie.setPath("/");
+		 cookieStore.addCookie(cookie);
 		cookie = new BasicClientCookie(COOKIE_PASSWORD, passwordHash);
 		cookie.setDomain(".dotasource.de");
-		// cookieStore.addCookie(cookie);
+		cookie.setPath("/");
+		 cookieStore.addCookie(cookie);
 		cookie = new BasicClientCookie(COOKIE_HASH, cookieHash);
 		cookie.setDomain(".dotasource.de");
+		cookie.setPath("/");
 		cookieStore.addCookie(cookie);
 		client = HttpClients.custom().setDefaultRequestConfig(globalConfig).setDefaultCookieStore(cookieStore).build();
 	}
@@ -95,7 +98,7 @@ public class DotasourceManager {
 				String line;
 				StringBuilder sb = new StringBuilder();
 				while ((line = br.readLine()) != null) {
-					sb.append(line);
+					sb.append(line).append("\n");
 				}
 				return sb.toString();
 			}
@@ -135,7 +138,7 @@ public class DotasourceManager {
 			content = input;
 			likeTable = new LikeTable(likes);
 		}
-		System.out.println(content);
+//		System.out.println(content);
 		editPost(notification.getPostId(), content + likeTable.toBBCode());
 	}
 
@@ -143,8 +146,6 @@ public class DotasourceManager {
 
 		HashMap<String, String> inputTypes = getInputTypes(postId);
 
-		System.out.println("Editing post " + postId);
-		//
 		HttpPost post = new HttpPost("http://dotasource.de/post-edit/" + postId + "/");
 		try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
@@ -164,7 +165,8 @@ public class DotasourceManager {
 			post.setEntity(new UrlEncodedFormEntity(nameValuePairs, Charset.forName("UTF-8")));
 
 			try (CloseableHttpResponse response = client.execute(post)) {
-				// System.out.println(response.getStatusLine());
+				System.out.println("HTTP Post: http://dotasource.de/post-edit/" + postId + "/");
+				 System.out.println(response.getStatusLine());
 				BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
 				String line = "";
 				while ((line = rd.readLine()) != null) {
@@ -206,11 +208,13 @@ public class DotasourceManager {
 		HttpGet httpGet = new HttpGet("http://www.dotasource.de/notification-list/?pageNo=" + page);
 		CloseableHttpResponse response = client.execute(httpGet);
 		try {
+			System.out.println("HTTP Get: http://www.dotasource.de/notification-list/?pageNo=" + page);
+			System.out.println(response.getStatusLine());
 			try (BufferedReader br = new BufferedReader(new InputStreamReader(response.getEntity().getContent(), Charset.forName("UTF-8")))) {
 				String line;
 				StringBuilder sb = new StringBuilder();
 				while ((line = br.readLine()) != null) {
-					sb.append(line);
+					sb.append(line).append("\n");
 				}
 				return sb.toString();
 			}
