@@ -14,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		DotasourceManager manager = new DotasourceManager();
-		Date newestdate = new Date(System.currentTimeMillis() - 5 * 1000 * 60);
+		Date newestdate = new Date(System.currentTimeMillis() - 9 * 60 * 1000 * 60);
 		while (true) {
 			Thread.sleep(30 * 1000);
 			System.out.println("Uhrzeit: " + new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis())));

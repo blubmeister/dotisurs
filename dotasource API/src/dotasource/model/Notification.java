@@ -17,7 +17,9 @@ public class Notification {
 	private static final Pattern USER_PATTERN_INFO_BLOCKS = Pattern.compile("<a.*?class=\"userLink\" data-user-id=\"(?<id>.*?)\">(?<name>.*?)</a>");
 	private static final Pattern USER_PATTERN = Pattern.compile("title=\"(?<name>.*?)\">\\s*<a href=\"http://dotasource.de/user/(?<id>[0-9]+)");
 	private static final Pattern TIMESTAMP_PATTERN = Pattern.compile("<time .*?data-timestamp=\"([0-9]*?)\"");
-	private static final Pattern POST_ID_PATTERN = Pattern.compile("data-link=\"http://dotasource.de/thread/.*?#post([0-9]+)\"");
+//	private static final Pattern POST_ID_PATTERN = Pattern.compile("data-link=\"http://dotasource.de/thread/.*?#post([0-9]+)\"");
+	private static final Pattern POST_ID_PATTERN = Pattern.compile("Beitrag im Thema <a href=\"http://dotasource.de/thread/[0-9]+.*?postID=([0-9]+)");
+	
 
 	private ArrayList<User> users;
 	private String postId;
@@ -62,8 +64,10 @@ public class Notification {
 
 		Matcher notificationMatcher = NOTIFICATION_PATTERN.matcher(htmlInput);
 
+		System.out.println(htmlInput);
 		while (notificationMatcher.find()) {
 			String notificationInput = notificationMatcher.group(0);
+			System.out.println(notificationInput);
 
 			// Post-ID
 			Matcher postIdMatcher = POST_ID_PATTERN.matcher(notificationInput);
@@ -87,7 +91,7 @@ public class Notification {
 
 			// Type
 			int type = TYPE_UNKNOWN;
-			if (notificationInput.contains("</a> gefällt Ihr Beitrag im Thema <a")) {
+			if (notificationInput.contains(" gefällt Ihr Beitrag im Thema <a")) {
 				type = TYPE_LIKE;
 			} else if (notificationInput.contains("</a> zitiert.")) {
 				type = TYPE_QUOTE;
@@ -121,7 +125,7 @@ public class Notification {
 			}
 
 			notifications.add(new Notification(postId, type, date, users));
-
+			System.out.println(new Notification(postId, type, date, users));
 			// System.out.println();
 			// System.out.println(notificationInput);
 			// System.out.println();
